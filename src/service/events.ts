@@ -1127,4 +1127,354 @@ export const Events = [
         content:
             '<p>If you are entering in any vehicle other than commercial vehicles, you are stopped by a force of 20 union men, each E12, M2, H6 with sidearms (see R210 for tech level). They have with them an all-terrain mover with a boat gun and gunner (E8, M5, H3). They inform you that you cannot enter the area unless you hire commercial transport (R215B), which they can call for you now. If you do, and pay the appropriate cost, you enter normally. If you refuse, you either cannot enter the area (and must go elsewhere), or you can try to shoot your way past — see R327. Once in battle, any escape from it becomes a successful “running” through the roadblock.</p>',
     },
+    {
+        id: 'E182',
+        title: 'Answer Distress Call',
+        time: '2 hours',
+        content:
+            '<p>You approach the starship and notice pieces of debris nearby. However, as you dock, both your airlock and main cargo hold doors are blown open, and two groups of space pirates rush into your ship. Each pirate is E8, M4, H6 in a utility suit, with a sidearm (see R210 for tech level), and carries a xen-alloy axe that cuts through interior doors and walls easily, and will disable any utility-suit wearer with a single hit. 2d6 pirates enter through the airlock (1 per turn) and cargo doors (3 per turn).</p><p>You can abandon ship via your ship’s boat, or you can fight within your starship. If you defeat the pirates on your ship, you can loot the pirate ship for 2d6 × 100 S in fittings and treasure. You must then abandon it, as its engines are rapidly approaching the critical stage.</p>',
+    },
+    {
+        id: 'E183',
+        title: 'Tortured by Mynkurians',
+        time: 'varies',
+        content:
+            '<p>Believing you to be a Nipnan spy, the Mynkurians begin to torture and question you. You lose all your personal possessions permanently, and roll 1d6 for the result:</p><ul><li>1 – They conclude you are not a spy and free you at the end of this day.</li><li>2–5 – They continue to question you for the day, roll again tomorrow.</li><li>6 – You suffer 1 hit of damage and continue to be questioned; roll again tomorrow.</li></ul>',
+    },
+    {
+        id: 'E184',
+        title: 'Cult Turns Hostile',
+        time: '1 hour',
+        content:
+            "<p>Each cult member pulls a needle-gun and opens fire on your party with surprise, see R230I. Each cultist is E6, M2, H2. If they disable your party, they steal all possessions and leave you, including vehicles (except ship’s boat or starship, which they can't operate).</p><p><b>Needle Guns:</b> Tech 3 weapons. Any hit causes automatic disablement.</p>",
+    },
+    {
+        id: 'E185',
+        title: 'Holdup Men',
+        time: '1 hour',
+        content:
+            '<p>If you have two or more companions, this result has no effect. Otherwise, you’re held up by two men demanding your money and possessions. You can give them up or fight. If you fight, see R305. Each holdup man is E7, M5, H5. One has a sidearm, the other a heavy hand weapon (see R210 for tech level).</p>',
+    },
+    {
+        id: 'E186',
+        title: 'Mental Shields Up',
+        time: 'no time',
+        content:
+            '<p>Although the probes could not gather specific information, the psionicist for the New Karman Defense Force has learned your personal identity. You are now <strong>“wanted”</strong> (R228) in the New Karma system, regardless of any crimes or contraband.</p>',
+    },
+    {
+        id: 'E187',
+        title: 'Let Life Force Engulf You',
+        time: 'rest of day',
+        content:
+            '<p>The life force wraps around you in painful greenish light. Roll 1d6:</p><ul><li>1–4 – You are dead. Lose the game.</li><li>5–6 – The life force merges with you, permanently adding its current Endurance to yours. It then dissipates into a wispy green cloud.</li></ul>',
+    },
+    {
+        id: 'E188',
+        title: 'Anagathic Venom',
+        time: '1 hour',
+        content:
+            '<p>You hear rumors of a rare arachnid producing a venom that arrests aging. Your contact has 1d6 doses, each for a base price of 1,000 S (R229A). If genuine and fresh, it can be sold in a City or Palace for 10,000 S per dose.</p><p>You can pay 25 S per dose at a scientific area to analyze it. Otherwise, roll 1d6 at sale time:</p><ul><li>1 – Venom was stale when bought; worthless.</li><li>2–3 – Genuine and fresh.</li><li>4–6 – Fake or has gone stale; worthless.</li></ul><p>Add +1 to the roll for each day owned unless kept in a stasis unit.</p>',
+    },
+    {
+        id: 'E189',
+        title: 'Attack the Black Starship',
+        time: '1 hour/round',
+        content:
+            '<p>The ship is a Byzantine secret police vessel. It has 12 hit points and tech 1 starship guns (one turret). It fights back and pursues until it has more hits than you, then it attempts escape. You cannot capture it, but you may destroy it. Doing so makes you <strong>“wanted”</strong> (R228) at Byzantium. To escape from it, see E431.</p>',
+    },
+    {
+        id: 'E190',
+        title: 'Paid Companionship',
+        time: '1 hour',
+        content:
+            '<p>You meet several people offering to pay for intimate companionship with you and your crew. Each day spent in RRR (R203C) earns 10 S per person, but no other activities are possible that day. You may stay as long as desired. Crew will remain even without salary while this continues, but once the arrangement ends, normal pay is required again.</p>',
+    },
+    {
+        id: 'E191',
+        title: 'Assassination Contract',
+        time: 'rest of day',
+        content:
+            '<p>An underground contact offers you 500 S now and 5,000 S upon return if you assassinate a target. Roll 1d6 to determine who and where:</p><ul><li>1–2: “Devil of Talitar” (E9, M5, H5), in Talitar system</li><li>3–4: Grand Duke of Imperia (E3, M3, H2), in Imperia Palaces/Cities</li><li>5: Byzantine Police Inspector (E8, M4, H6), anywhere in Byzantium</li><li>6: Palatek Corp. President (E4, M0, H2), anywhere in Palatek with life support</li></ul><p>To locate the target: roll 1d6 in an appropriate area; a “6” finds them. Or, spend a full day in the area and roll at the end of the day — 5–6 finds them.</p><p>Once found, roll 1d6 for the situation:</p><ul><li>1–2: Alone, with a sidearm (2 tech levels above normal, max 6)</li><li>3–4: Has 2 bodyguards</li><li>5: Has 4 bodyguards</li><li>6: In armored limousine skimmer with driver and gunner</li></ul><p>Bodyguards: E8, M5, H5, with sidearms 1 tech level above normal (max 6). Armored skimmer reduces all hits by 2. Target tries to escape once outmatched.</p>',
+    },
+    {
+        id: 'E192',
+        title: 'Cargo Run to Palatek',
+        time: 'rest of day',
+        content:
+            '<p>You may buy hand-carved items at the Colony on Regari for 5 S/CU and sell them at Palatek City for 10 S/CU. At Palatek City, buy electronics parts for 60 S/CU and sell them at the Regari Colony for 100 S/CU.</p><p>Buying/selling, loading/unloading takes 1 hour at each location. You may repeat this trade loop as long as desired.</p>',
+    },
+    {
+        id: 'E193',
+        title: 'Answer Distress Call',
+        time: '1 hour per die roll',
+        content:
+            '<p>You dock with a damaged starship and send over a utility-suit-equipped party. Each hour aboard, roll 1d6:</p><ul><li>1–3: Each party member saves one person, then explosions force you to abandon ship</li><li>4: Corrosive gas kills one random party member; the rest must abandon ship</li><li>5: Save two people; continue next hour</li><li>6: Save one person, then a high-voltage arc kills one party member (random)</li></ul><p>You earn 500 S per person saved when you land them on any planet.</p>',
+    },
+    {
+        id: 'E194',
+        title: 'Feed It Life Support Units',
+        time: '1 hour',
+        content:
+            '<p>You may feed it any number of LSUs. It gains 1 Endurance per LSU. Roll 1d6:</p><ul><li>If the result is less than the number of LSUs, it dissipates peacefully into mist</li><li>If the result is a 6, it engulfs one person (random); see E187 for effect</li></ul><p>Then return to E135 and choose another option.</p>',
+    },
+    {
+        id: 'E195',
+        title: 'Attack the Mynkurians',
+        time: '1 hour',
+        content:
+            '<p>You may fire twice before the Mynkurian ships reach you (see R230L). They have no ECM or defensive screens. Each hit destroys one ship. Ships that survive and reach you will collide, see E165.</p>',
+    },
+    {
+        id: 'E196',
+        title: 'Minor Eruption',
+        time: '1 hour',
+        content:
+            '<p>A volcanic eruption hits the area. If in a vehicle, it takes one hit of damage (R217). If on foot, each person suffers 1d6–1 hits (roll separately). A successful Cunning roll (R202) avoids injury.</p>',
+    },
+    {
+        id: 'E197',
+        title: 'Allow Them to Board',
+        time: 'rest of day',
+        content:
+            '<p>They escort your ship to a Palatek Space Station or orbit. Your ship is searched (R229D) for any items from Industrial or Scientific areas. If any are found, see E021.</p><p>If you previously fought Palatek ships or had encounters, you are fined 400 S per hit inflicted. If you are “wanted,” you are jailed (E023). Otherwise, you may go on your way tomorrow.</p>',
+    },
+    {
+        id: 'E198',
+        title: 'Disgruntled Colonists',
+        time: 'rest of day',
+        content:
+            "<p>A group of 1d6 × 10 colonists want transport to a Colony on another planet with a higher Wealth Code. Each pays 30 S upon delivery. Each colonist takes up 2 CU.</p><ul><li>If you take fewer than half, roll 1d6 — on 3+, see E142.</li><li>If you take them all, see E122 — one colonist wants to join your crew (if he does, he won't pay the 30 S).</li></ul>",
+    },
+    {
+        id: 'E199',
+        title: 'Palace Statuary',
+        time: '1 hour per theft',
+        content:
+            '<p>You may steal statues from palace gardens. Each statue is 3 CU, worth 300 S (base price, R229A) on New Karma only.</p><p>You may return, but each time roll 1d6 (instead of a normal Entry Encounter). If the roll is not greater than the number of previous trips, you are discovered — see E160.</p>',
+    },
+    {
+        id: 'E400',
+        title: 'Space Amoeba',
+        time: '1 hour',
+        content:
+            '<p>Upon deactivating the stasis unit, a space amoeba is found fissioning into two 2 CU amoebas. Each rushes to engulf a character (randomly determined). In the first round, they make contact with tendrils—no wounds yet, and no suit offers protection. From round two onward, victims suffer 1 hit/round, and the amoeba gains 1 Endurance per round.</p><p>Amoebas cannot be harmed hand-to-hand. Ranged weapons damage the amoeba <i>and</i> its victim. Dyla-weed or hallucinogenic drugs disable it for 1d6 rounds, allowing placement into stasis (1 CU per 4 Endurance).</p><p>Freshly split amoebas have Endurance 5. At Endurance 10, they fission again. Amoebas in stasis may be sold at any Scientific area for 1,000 S per CU.</p>',
+    },
+    {
+        id: 'E401',
+        title: 'Mental Shield',
+        time: '1 hour',
+        content:
+            '<p>Your mental shield protects you from the psychic attack. You engage sublight drive and escape, but your psionicist collapses, suffering 2d6 hits. No enemy ship was ever seen on scanners.</p>',
+    },
+    {
+        id: 'E402',
+        title: 'Gun Buoy Examined',
+        time: 'rest of day',
+        content:
+            '<p>You examine a damaged gun buoy. Roll 1d6:</p><ul><li>1–3: Scrap, nothing of value</li><li>4: Retrieve tech-6 guns (requires a Starship Engineer)</li><li>5–6: Recover a broken-down (R218) robot brain (M6, H1, 1 CU). The brain doubles the operating cost of a normal robot and must be installed by a Starship Engineer. It enables combat capability and starship gunnery, but such robots are illegal throughout the Pavonis sector.</li></ul>',
+    },
+    {
+        id: 'E403',
+        title: 'Boarding Party',
+        time: '1 hour',
+        content:
+            "<p>You must pay 80 S in pilot fees, 10 S visa per person, and a 25 S entry fee for the starship. Payment is mandatory due to overwhelming force.</p><p>If someone aboard is “wanted” (R228), authorities don't recognize it. If you refuse or can't pay, your ship is impounded until payment plus 10% daily interest is made—or you must hyperjump out of the system (R212A).</p>",
+    },
+    {
+        id: 'E404',
+        title: 'Try to Energize Stasis',
+        time: 'varies',
+        content:
+            "<p>You energize the stasis unit just as a mutinous crewman fires—he’s partially caught in the field and killed instantly. The ship cannot operate with the pilot's stasis field active, so remaining crew escape in the ship’s boat with as much cargo as it holds. The rest of the ship remains intact until you recover (R240).</p><p>When stasis ends, the crewman’s shot completes—resolve its effect with R230.</p>",
+    },
+    {
+        id: 'E405',
+        title: 'Four Armed Men',
+        time: '1 hour',
+        content:
+            '<p>You surprise four armed men (E6, M4, H1, each with a tech 5 sidearm) as the stasis unit is deactivated. You may attack first with surprise (R230I), or attempt conversation. If you talk, roll 1d6:</p><ul><li>1–2: They put down weapons but refuse to join you. Encounter ends.</li><li>3: They offer to become bodyguards for 5 S/week each.</li><li>4–6: They open fire — see R327.</li></ul>',
+    },
+    {
+        id: 'E406',
+        title: 'Offer Bribe',
+        time: 'no time',
+        content:
+            '<p>You attempt a bribe. Roll 1d6:</p><ul><li>1: They accept it and let you pass.</li><li>2: They demand triple what you offered — if paid, they let you pass.</li><li>3: They demand 1d6 × 1,000 S — if paid, they let you pass.</li><li>4–6: They refuse. If you cannot bribe them, they open fire — see E428.</li></ul>',
+    },
+    {
+        id: 'E407',
+        title: 'Shoot at Object on Hull',
+        time: '1 hour',
+        content:
+            '<p>You fire on the object attached to your hull. It reflects intense radiation, dealing 1d6+2 hits (R231) to each person outside the hull, including those in utility suits or a ship’s boat. The object is unaffected. Return to E119 to choose another option.</p>',
+    },
+    {
+        id: 'E408',
+        title: 'Ship Darts Away',
+        time: '1 hour',
+        content:
+            "<p>As you contact the strange ship's hull, it suddenly withdraws, extends three projections, and darts away at incredible speed. It disappears from scanners and cannot be pursued. The encounter ends.</p>",
+    },
+    {
+        id: 'E409',
+        title: 'Religious Fanatics',
+        time: 'rest of day',
+        content:
+            '<p>A cult on New Karma hires you to transport 9 missionaries—one to each other system in the sector. They must be delivered to rural areas or cities. For each delivered missionary, you are paid 2,500 S at the destination.</p><p>The cult demands a daily sacrifice of domestic animals (1 CU/day per missionary). If animals run out, the remaining missionaries commit suicide and no further payments occur. Unused animals deduct 100 S per CU from final payments.</p>',
+    },
+    {
+        id: 'E410',
+        title: 'Rich Member of Royal Family',
+        time: '1 hour',
+        content:
+            '<p>You release a 2 CU-sized fat man named Johann, subprince of the Imperia royal family. He offers 100,000 S if returned to an Imperian land area immediately (shortest route). For each day beyond tomorrow, subtract 10,000 S. After 10 days, if not delivered, you become “wanted” in Imperia.</p>',
+    },
+    {
+        id: 'E411',
+        title: 'Gunner Fires',
+        time: 'no time',
+        content:
+            '<p>Your gunner fires on a nearby torpedo-shaped vessel, damaging it but suffering a mental surge, taking 1d6 hits and falling unconscious. No further psychic activity is detected.</p><p>You may now send someone in a utility suit to explore the damaged craft — see E419.</p>',
+    },
+    {
+        id: 'E412',
+        title: 'Go with Mutineer',
+        time: '1 hour',
+        content:
+            '<p>A mutinous crewman disarms you and escorts you to the ship’s boat, allowing you to bring any non-weapon cargo. He pilots the main ship away toward a planet.</p><p>If you follow to the same planet, you may search for your starship by spending 1 hour per area and rolling 1d6. A 5–6 means you find it stripped of guns, cargo, stasis units, RUs, FUs, and LSUs. Each area can only be checked once. If not found, it is lost forever. The mutineer is never seen again.</p>',
+    },
+    {
+        id: 'E413',
+        title: 'Try to Escape Scout',
+        time: '1 hour',
+        content:
+            '<p>As you flee, the scout ship fires all guns. Each standard gun inflicts one hit on your starship (R217). The nose gun fires a magneto-plasma beam that penetrates the hull and kills everyone in one compartment, determined by a 1d6 roll:</p><ul><li>1: pilot’s compartment</li><li>2: crew quarters</li><li>3: engineering</li><li>4: gun turret</li><li>5: main cargo hold</li><li>6: boat hold and ship’s boat</li></ul><p>Your ship escapes; the scout does not pursue. Encounter ends.</p>',
+    },
+    {
+        id: 'E414',
+        title: 'Engineer Examines Object on Hull',
+        time: '2 hours',
+        content:
+            "<p>Your engineer investigates the device. Roll 1d6:</p><ul><li>1: Touches wrong part, suffers 2d6 hits from radiation — return to E119.</li><li>2: Explosion kills him, inflicts 2 hits on ship, and destroys items in that compartment.</li><li>3: Can’t understand it, but removes it — no further issues.</li><li>4: Removes 2 advanced servo-controllers (worth 2,200 S each in other systems), and disables the device.</li><li>5: Discovers it's a mine with 3 CU explosives (300 S each at mining area), rest is junk.</li><li>6: Reveals it's a 3 CU mini-craft with sublight drive, 1-year power and life support, no weapons, occupies 9 CU total.</li></ul>",
+    },
+    {
+        id: 'E415',
+        title: 'Wounded Pilot/Navigator',
+        time: '1 hour',
+        content:
+            '<p>You release a wounded starship pilot/navigator (E7, M0, H2, 1d6 wounds). He offers to serve without pay for 40 days. If you decline, he promises to replace the stasis unit you used when you next arrive at a spaceport or station.</p>',
+    },
+    {
+        id: 'E416',
+        title: 'Ship Self-Destructs',
+        time: 'instantly',
+        content:
+            '<p>The ship explodes without warning, destroying your crew, starship, and ending the game. You lose.</p>',
+    },
+    {
+        id: 'E417',
+        title: 'Escapee Seeks Help',
+        time: '1 hour',
+        content:
+            '<p>A desperate escapee from local prison begs for a ride off-planet before the next day ends. Roll 1d6 to determine his home planet:</p><ul><li>1: Palatek</li><li>2: Uruskop</li><li>3: Byzantium</li><li>4: Nipna</li><li>5: Mynkuria</li><li>6: New Karma</li></ul><p>You may ignore him, turn him in for a 10 S reward (if not “wanted” here), or take him. If you take him, refer to E427 upon delivery to a life-supporting area on his planet.</p>',
+    },
+    {
+        id: 'E418',
+        title: 'Sublight Drive Energized',
+        time: '1 hour',
+        content:
+            '<p>When you activate the sublight drive, roll 1d6:</p><ul><li>1–2: The object falls off and is lost in space.</li><li>3–5: The object emits radiation, killing all life in the adjacent compartment. It melts onto the hull and becomes junk.</li><li>6: The object is unaffected — return to E119 or select a new option after deactivating the drive.</li></ul>',
+    },
+    {
+        id: 'E419',
+        title: 'Investigate Torpedo',
+        time: '1d6 hours',
+        content:
+            "<p>You investigate the torpedo-shaped craft. Roll 1d6:</p><ul><li>1: It's wrecked beyond recognition. Nothing of value.</li><li>2: Contains a deformed dead body worth 100 S at a Scientific area.</li><li>3–6: An unconscious person wearing a glowing gem is found. Removing the gem causes instant convulsions and death. The gem is worth 20,000 S at any Mining area. You may put it on. If so, roll 1d6:</li><ul><li>1: Instant death in agony</li><li>2: Horribly deformed; must pay double and receive half value for all transactions</li><li>3–5: Gain 1d6+2 psionic power (see E022); removal of gem causes instant death</li><li>6: Gains overwhelming psionic power. If it’s you, you win upon returning to any planet. If another person, you lose, as they enslave you mentally.</li></ul></ul>",
+    },
+    {
+        id: 'E420',
+        title: 'Starship Engineer',
+        time: '1d6 hours',
+        content:
+            '<p>A starship engineer is released from stasis, with a tech-1 utility robot. His ship was lost 84 years ago. He’ll work for you if you buy the robot for 100 S and pay 12 S/week with a stasis unit at his station. He is E8, M3, H3 and can drive a skimmer.</p>',
+    },
+    {
+        id: 'E421',
+        title: 'Stasis Energized',
+        time: 'rest of day',
+        content:
+            '<p>You activate the stasis to avoid a mental attack. Your crew calls for help. Another ship arrives and tows you to the nearest space station or planetary orbit. They replace minor systems and destroy the stasis unit (R212E) in the process. You are charged 450 S. If unpaid, your ship is impounded until paid.</p>',
+    },
+    {
+        id: 'E422',
+        title: 'Attack the Scout',
+        time: '1 hour per round',
+        content:
+            '<p>You engage in battle with a scout ship. You fire first, then it retaliates. Battle continues (R230L) until one ship is destroyed or escapes. If you try to flee, the scout pursues. Scout has 2 hit points, a tech 6 turret gun, and a magneto-plasma nose gun (fires once first turn, then recharges on 5-6). The plasma gun kills all in one compartment per hit (roll 1d6):</p><ul><li>1: pilot’s compartment</li><li>2: crew quarters</li><li>3: engineering</li><li>4: gun turret</li><li>5: main cargo hold</li><li>6: boat hold and ship’s boat</li></ul>',
+    },
+    {
+        id: 'E423',
+        title: 'Attempt to Hyperjump',
+        time: 'instantly',
+        content:
+            "<p>If the object is near the hypercharge storage area, it explodes and destroys your ship. Any auto-energized stasis units remain in this system. If located elsewhere, roll 1d6: on a 1, you are destroyed. Otherwise, the object vanishes after hyperjump — and you're unaware it ever existed.</p>",
+    },
+    {
+        id: 'E424',
+        title: 'Space Gypsies',
+        time: 'rest of day',
+        content:
+            '<p>The leader of a space gypsy clan offers a ruby worth 480 S as a gift and promises one more for each of his 110 clan members if you transport them all together to New Karma. If you refuse, you keep the initial ruby. If you agree and deliver them, see E020. You must have enough CU for all of them.</p>',
+    },
+    {
+        id: 'E425',
+        title: 'Pure Dyla-Weed',
+        time: 'no time',
+        content:
+            '<p>The stasis unit holds 4 CU of illegal dyla-weed, worth 16,000 S per CU base price (R229A) in any Slum area. Only 1 CU can be sold per Slum area.</p>',
+    },
+    {
+        id: 'E426',
+        title: 'Enter Strange Ship',
+        time: '1 hour',
+        content:
+            "<p>You discover the ship is made of bio-plastic alloys, with no crewmen alive. Further investigation reveals the ship is alive! The walls close in on you. Roll 1d6:</p><ul><li>1-2: You escape to your own ship; the living ship darts away and is quickly lost on scanners.</li><li>3-4: You are digested by the ship, becoming fuel.</li><li>5-6: You are incorporated into the ship's nervous system. You retain your mind but your body is destroyed. You can't leave, but consider it a victory — crack open your old starship and have your first meal!</li></ul>",
+    },
+    {
+        id: 'E427',
+        title: 'Escapee Delivered to Home World',
+        time: '1 hour',
+        content:
+            "<p>You discover whether the escapee fulfilled his promise. Roll 1d6:</p><ul><li>1-2: He slips away in a crowd and you never see him again.</li><li>3: He has no wealth but offers 40 S, all he has.</li><li>4: He has no money but offers valuable underworld connections, providing false papers for you and your crew.</li><li>5: He thanks you and pays you 1,500 S.</li><li>6: He’s from a wealthy family and pays you 4,000 S now, with 4,000 S each week for the rest of your life. Payments are to a local bank account, continuing until you're proven dead to the bank.</li></ul>",
+    },
+    {
+        id: 'E428',
+        title: 'Scout Acts First',
+        time: '2 hours',
+        content:
+            '<p>After an hour, the scout acts. Roll 1d6:</p><ul><li>1-2: He gives a friendly warning and disappears rapidly.</li><li>3-6: He opens fire. You can either return fire or instantly escape (if still able). For the effect of his fire, and resolving any space battles, see E422.</li></ul>',
+    },
+    {
+        id: 'E429',
+        title: 'Try to Open without an Engineer',
+        time: '1d6 hours',
+        content:
+            '<p>Refer to E414 but subtract one from the die roll (-1). A result of “0” is considered a “1” instead.</p>',
+    },
+    {
+        id: 'E430',
+        title: 'Board the Ship',
+        time: '3 hours',
+        content:
+            "<p>You board the ship, realizing it's an Antelope-class trader like yours, but camouflaged. It’s in perfect order but empty of cargo, unarmed, and has a dead pilot. There are no hyperdrive charges, and the engines require repair (R219). A starship engineer (R221B) is needed for repairs. If you tow the ship to a space station or spaceport (at half speed), you can salvage it for 12,000 S unrepaired or 30,000 S if repaired. Selling the ship will take a full day. If you leave it behind, someone else will find it before you return.</p>",
+    },
+    {
+        id: 'E431',
+        title: 'Black Ship Astern',
+        time: '1 hour',
+        content:
+            '<p>The black ship fires one last shot and lets you go without pursuit.</p>',
+    },
 ]
