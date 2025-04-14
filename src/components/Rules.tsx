@@ -1,4 +1,5 @@
 import Card from './Card'
+import Credits from './Credits'
 import Equipment from './Equipment'
 import HowToPlay from './HowToPlay'
 import Instructions from './Instructions'
@@ -16,6 +17,10 @@ const Rules = () => {
 
             <Card title="Equipment">
                 <Equipment />
+            </Card>
+
+            <Card title="Acout The Game">
+                <Credits />
             </Card>
         </section>
     )

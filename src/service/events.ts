@@ -1,5 +1,34 @@
 export const Events = [
     {
+        id: 'E001',
+        title: 'The Adventure Begins',
+        time: 'takes 0 hours',
+        content:
+            '<p>Due to bad luck and loan sharks, your financial situation is getting very desperate. Your small merchant starship never seems to have a full cargo hold, but operating costs are high. Your cash is almost gone, and another payment is due to the sector financiers. Maybe, just maybe, you can make ends meet if you look for illegal goods and begin to take chances.</p>' +
+            '<p>Consult R201B to determine your starting attributes, and your skills, for your new career as a Star Smuggler, then continue reading here:</p>' +
+            "<p>You have a sturdy and reliable Antelope class starship (R212) built to tech level 1 standards (R210) and outfitted with a Hopper class ship's boat (R214) and starship guns (R216A), both also tech level 1. The starship has six Hypercharges (R212B) and the boat has 15 fuel units (FUs, R211). In addition, a stasis unit (R212E) is mounted in the pilot's compartment with 2 CU capacity, to protect the occupants in case of disaster. You personally own a utility suit (R213) and a sidearm (R216D), both of tech level 1. Your only money is in your pocket: 1d6 times 100, plus 150 Secs (for example, a 1d6 roll of '3' means 3x100, then +150, or 450 Secs).</p>" +
+            "<p>You have no crew or hirelings, no cargo, and no repair units. However, you do have proper papers and are not 'wanted' in any system (R228). This is the first day of the week, so you have 10 days until your next starship payment is due (R203E).</p>" +
+            '<p>You are currently at the sole planet in the Regari system (R207A) of the Pavonis sector, at the spaceport (R205O). This morning you decide to take up a life of smuggling. You check over your starship guns and personal sidearm, and prepare to find profit through any means. See R203 for the activities available to you.</p>',
+    },
+    {
+        id: 'E002',
+        title: 'Repossession Team',
+        time: 'takes 1 hour',
+        content:
+            "<p>A repossession team is in the area. Ignore this event (they're after someone else!) unless you have defaulted on your loan (R203E) and your starship is in this area. If they're after you, the following occurs:</p>" +
+            '<p>The team of six men surround the spaceship. One is a mobile attorney with repossession writs, two are heavy gunners with explosive heavy hand weapons of tech level 6, and three are bodyguards with tech 6 sidearms. They are deployed for battle and in the first round open fire on the starship, one heavy hand gunner at the airlock, the other at the cargo hold hatch, from dispersed range. They know their business, and will blast either open with any hit. They will then try to board the ship and take control either of the engineering or pilot compartment (possible if they are the only persons in either compartment). They will escort off the ship anyone who surrenders, but will attempt to kill anyone who fights them or attempts to remain on board. If they succeed, they gain control of the ship, force all other persons off it with whatever they can carry - you lose your starship.</p>',
+    },
+    {
+        id: 'E003',
+        title: 'Armored Vehicles',
+        time: 'takes 1 hour',
+        content:
+            '<p>You are attacked by armored military vehicles, see R311. Determine tech level (R210) with table R235, and then roll 1d6 to determine the exact composition of the force:</p>' +
+            '<ul><li>1-3: One vehicle and three infantrymen</li><li>4-5: Two vehicles and four infantrymen</li><li>6: Three vehicles and six infantrymen</li></ul>' +
+            "<p>Each infantryman is E6, M4, H3. Each vehicle has heavy armor, reducing hit results by two (that is, a single or double hit becomes a miss, a triple hit becomes a single hit, etc.), and is armed with a boat gun (R230K). Each vehicle has a crew of three: a driver, gunner, and commander (each E6, M3 with sidearms), who only leave the tank if it is disabled, and then will attempt to flee.</p><p>If you defeat the tank(s) but don't destroy them, you can capture and repair them. A tank functions like a skimmer (R215C), with the following variations: it takes up 45 CU space, has a capacity of 6 CU for crew and cargo, plus 6 CU of fuel, which it consumes at the rate of 2 FU per day. It moves at half the speed of a skimmer, and therefore is slower than anything other than walking on foot.</p>" +
+            "<p>Private use of a tank is illegal in all systems, but having it in cargo (not in use) is allowed if weapons are permitted. If you use the tank as a vehicle to enter any area, and are detected (R238) immediately see E018 if there are any military areas on the planet. Otherwise, see E017 and ignore normal detection events. If you are not detected, proceed normally. If you later get into combat and use the tank, you will become 'wanted' in the system if any of your opponents escape the battle alive.</p>",
+    },
+    {
         id: 'E004',
         title: 'Plague Carriers',
         time: 'takes rest of day',

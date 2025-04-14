@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Instructions() {
     return (
         <>
@@ -15,10 +17,12 @@ function Instructions() {
             </p>
             <p>
                 You can learn this game as you play. Simply start with the first
-                event (E001) and then read sections as necessary. You may find
-                it convenient to read important rules sections first, including
-                R203, R212, R221, R230 and R232, or if ambitious, read all the
-                rules sections first (R201–R232).
+                event (<Link to="/E001">E001</Link>) and then read sections as
+                necessary. You may find it convenient to read important rules
+                sections first, including <Link to="/R203">R203</Link>,
+                <Link to="/R212">R212</Link>, <Link to="/R221">R221</Link>,
+                <Link to="/R230">R230</Link> and <Link to="/R232">R232</Link>,
+                or if ambitious, read all the rules sections first (R201–R232).
             </p>
             <p>
                 A pencil and some paper is needed for this game — to keep track
