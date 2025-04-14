@@ -7,7 +7,7 @@ import './index.css'
 const Tag = React.lazy(() => import('./components/Tag'))
 const Tags = React.lazy(() => import('./components/Tags'))
 const Rules = React.lazy(() => import('./components/Rules'))
-const Events = React.lazy(() => import('./components/Events'))
+const Sheet = React.lazy(() => import('./components/Sheet'))
 
 const router = createBrowserRouter([
     {
@@ -41,10 +41,10 @@ const router = createBrowserRouter([
                 ),
             },
             {
-                path: '/events',
+                path: '/sheet',
                 element: (
                     <React.Suspense fallback={<>...</>}>
-                        <Events />
+                        <Sheet />
                     </React.Suspense>
                 ),
             },

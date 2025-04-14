@@ -11,8 +11,8 @@ const MobileNav = () => {
                 <span className="text-xs">Rules</span>
             </Link>
 
-            <Link to="/events">
-                <span className="text-xs">Events</span>
+            <Link to="/sheet">
+                <span className="text-xs">Sheet</span>
             </Link>
         </section>
     )

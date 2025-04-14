@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom'
 import { Rules as RulesData } from '@/service/rules'
 import { Events as EventsData } from '@/service/events'
 import Card from './Card'
+import { useEffect, useState } from 'react'
+import { makeUrlsClickable } from '@/lib/helper'
 
 type TagItem = {
     id: string
@@ -10,25 +12,25 @@ type TagItem = {
     time?: string
 }
 
-const makeUrlsClickable = (content: any) => {
-    if (!content) return
-
-    const rulesRegex = /[ER]\d{3}[A-Z]?/g
-    const transformedText = content.replace(rulesRegex, '<a href="$&">$&</a>')
-
-    return transformedText
-}
-
 const Tag = () => {
     const { tagId } = useParams()
+    const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const dataSet = RulesData.concat(EventsData)
-    const activeTag = dataSet.find((item: TagItem) => item.id === tagId)
     const transformedContent = makeUrlsClickable(activeTag?.content)
+
+    useEffect(() => {
+        const findTag = dataSet.find((item: TagItem) => item.id === tagId)
+        setActiveTag(findTag as TagItem)
+    }, [tagId])
 
     return (
         <div>
             {activeTag && (
-                <Card rule={activeTag.id} title={activeTag.title}>
+                <Card
+                    id={activeTag.id}
+                    time={activeTag.time || null}
+                    title={activeTag.title}
+                >
                     <div
                         dangerouslySetInnerHTML={{
                             __html: transformedContent,
