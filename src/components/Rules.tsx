@@ -19,7 +19,7 @@ const Rules = () => {
                 <Equipment />
             </Card>
 
-            <Card title="Acout The Game">
+            <Card title="About The Game">
                 <Credits />
             </Card>
         </section>
