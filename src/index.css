@@ -1,0 +1,17 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+}
