@@ -1,5 +1,3 @@
-import { Rules as RulesData } from '@/service/data'
-import { useParams } from 'react-router-dom'
 import Card from './Card'
 
 const makeUrlsClickable = (content: any) => {
@@ -14,15 +12,14 @@ const makeUrlsClickable = (content: any) => {
     return transformedText
 }
 
-const Rule = () => {
-    const { ruleId } = useParams()
-    const rule = RulesData.find((item: any) => item.id === ruleId)
-    const transformedContent = makeUrlsClickable(rule?.content)
+const Tag = (props: any) => {
+    const { tag } = props
+    const transformedContent = makeUrlsClickable(tag?.content)
 
     return (
         <div>
-            {rule && (
-                <Card rule={rule.id} title={rule.title}>
+            {tag && (
+                <Card rule={tag.id} title={tag.title}>
                     <div
                         dangerouslySetInnerHTML={{
                             __html: transformedContent,
@@ -34,4 +31,4 @@ const Rule = () => {
     )
 }
 
-export default Rule
+export default Tag

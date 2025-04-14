@@ -4,9 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 
-const Overview = React.lazy(() => import('./components/Overview'))
-const Rules = React.lazy(() => import('./components/Rules.tsx'))
-const Rule = React.lazy(() => import('./components/Rule.tsx'))
+const Tags = React.lazy(() => import('./components/Tags'))
+const Rules = React.lazy(() => import('./components/Rules'))
 const Events = React.lazy(() => import('./components/Events'))
 
 const router = createBrowserRouter([
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
                 path: '/',
                 element: (
                     <React.Suspense fallback={<>...</>}>
-                        <Overview />
+                        <Tags />
                     </React.Suspense>
                 ),
             },
@@ -28,16 +27,6 @@ const router = createBrowserRouter([
                         <Rules />
                     </React.Suspense>
                 ),
-                children: [
-                    {
-                        path: '/rules/:ruleId',
-                        element: (
-                            <React.Suspense fallback={<>...</>}>
-                                <Rule />
-                            </React.Suspense>
-                        ),
-                    },
-                ],
             },
             {
                 path: '/events',

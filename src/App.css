@@ -24,6 +24,18 @@ a {
     color: #d00;
 }
 
+.logo {
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family:
+        'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+        Arial, sans-serif;
+    padding: 0;
+    margin-bottom: -33px;
+    text-align: center;
+}
+
 .mobile-nav {
     position: fixed;
     left: 0;

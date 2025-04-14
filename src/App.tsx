@@ -12,7 +12,7 @@ function App() {
 
     return (
         <>
-            <h1>Star Smuggler</h1>
+            <h1 className="logo">Star Smuggler</h1>
             <Outlet />
             <MobileNav />
         </>
