@@ -12,12 +12,6 @@ function Credits() {
                 can be changed from game to game for even greater variation.
             </p>
             <p>
-                Star Smuggler is one of the most ambitious and sophisticated
-                games in the Dwarfstar line. Feel free to tell us how you liked
-                it by writing to the Publishing Department, Heritage USA, Box
-                345125, 14001 Distribution Way Dallas, Texas 75234.
-            </p>
-            <p>
                 Star Smuggler was designed by B. Dennis Sustare, edited by
                 Arnold Hendrick. Graphics design by David Helber, map art by Tom
                 Maxwell, cover painting by Bob Depew. Re-designed components and
