@@ -5,18 +5,10 @@ import Card from './Card'
 const makeUrlsClickable = (content: any) => {
     if (!content) return
 
-    let transformedText = content
-
-    const rulesRegex = /R\d{3}[A-Z]?/g
-    transformedText = transformedText.replace(
+    const rulesRegex = /[ER]\d{3}[A-Z]?/g
+    const transformedText = content.replace(
         rulesRegex,
         '<a href="/rules/$&">$&</a>'
-    )
-
-    const eventsRegex = /E\d{3}[A-Z]?/g
-    transformedText = transformedText.replace(
-        eventsRegex,
-        '<a href="/events/$&">$&</a>'
     )
 
     return transformedText
