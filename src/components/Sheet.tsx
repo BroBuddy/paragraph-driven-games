@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import Card from './Card'
-import { makeUrlsClickable } from '@/lib/helper'
 
 type TagSheet = {
     id: string
