@@ -91,7 +91,7 @@ const Booklet = () => {
         <section className="flex flex-col py-2 w-full">
             <Card>
                 <Select
-                    defaultValue={selectedTag}
+                    value={selectedTag}
                     styles={customStyles}
                     isSearchable={true}
                     onChange={handleChange}
