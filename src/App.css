@@ -7,11 +7,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     color: #ddd;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
-section {
-    padding: 20px;
+h2 {
+    border-left: 3px solid #a00;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 p {
@@ -21,7 +23,11 @@ p {
 
 a {
     font-weight: bold;
-    color: #d00;
+    color: #a00;
+}
+
+img {
+    border-radius: 10px;
 }
 
 table tr th {
@@ -38,7 +44,7 @@ table tr td {
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0;
-    margin-bottom: -31px;
+    margin-bottom: -25px;
     text-align: center;
 }
 
@@ -66,7 +72,7 @@ table tr td {
 }
 
 .mobile-nav a:hover {
-    color: #d00;
+    color: #a00;
 }
 
 #root {

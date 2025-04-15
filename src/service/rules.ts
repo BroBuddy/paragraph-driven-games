@@ -410,7 +410,7 @@ export const Rules = [
         title: 'Regari',
         content:
             '<p>Once a key center of industrial development, Regari is now a hint of its past glory. People live a poorer lifestyle, and the system has suffered a serious economic depression for years. There is little system defense, and breakdown of equipment is now commonplace.</p>' +
-            '<p>System Entry 1d6 roll: 1- E090, 2- E091, 3- E096, 4- E100, 5- E116, 6- E093<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E090</li><li>E091</li><li>E096</li><li>E100</li><li>E116</li><li>E093</li></ol>' +
             'System Codes: wealth 0, tech 30.<br />' +
             'Planet I: layout J-K, gravity 3, good air.</p>',
     },

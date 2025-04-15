@@ -1,16 +1,19 @@
 const Card = ({ id, time, title, children }: any) => {
     return (
-        <div className="flex flex-col bg-black/70 my-2 p-4 text-xs rounded-xl">
+        <div className="flex flex-col bg-black/70 p-4 text-xs">
             <div className="grid grid-cols-2">
-                {id && <h2 className="text-md text-gray-500">{id}</h2>}
+                {id && <h3 className="text-md text-gray-500 mb-2">{id}</h3>}
+
                 {time && (
-                    <h2 className="text-md text-gray-500 text-right">
+                    <h3 className="text-md text-gray-500 mb-2 text-right">
                         ({time})
-                    </h2>
+                    </h3>
                 )}
             </div>
 
-            {title && <h2 className="text-xl text-red-700 pb-2">{title}</h2>}
+            {title && (
+                <h2 className="text-xl text-gray-500 px-2 mb-4">{title}</h2>
+            )}
 
             {children}
         </div>

@@ -1,46 +1,63 @@
+import { Link } from 'react-router-dom'
 import Card from './Card'
-import { Rules as RulesData } from '@/service/rules'
 import { makeUrlsClickable } from '@/lib/helper'
 
-type TagItem = {
+type TagSheet = {
     id: string
     title: string
-    content: string
-    time?: string
 }
 
-const findIds = [
-    'R203',
-    'R203A',
-    'R203B',
-    'R203C',
-    'R203D',
-    'R203E',
-    'R233',
-    'R238',
+const sheetTags: TagSheet[] = [
+    {
+        id: 'R203',
+        title: 'Daily Actions',
+    },
+    {
+        id: 'R203A',
+        title: 'Travel',
+    },
+    {
+        id: 'R203B',
+        title: 'Contact',
+    },
+    {
+        id: 'R203C',
+        title: 'Rest, Recuperation & Repair',
+    },
+    {
+        id: 'R203D',
+        title: 'Breakdown',
+    },
+    {
+        id: 'R203E',
+        title: 'Loan Payments',
+    },
+    {
+        id: 'R233',
+        title: 'Entry & Contact Table',
+    },
+    {
+        id: 'R238',
+        title: 'Entry Detection Table',
+    },
 ]
 
 function Sheet() {
-    const tags = RulesData.filter((item: TagItem) => {
-        if (findIds.includes(item.id)) {
-            return item
-        }
-    })
-
     return (
         <section className="flex flex-col py-2 w-full">
-            {tags &&
-                tags.map((tag: TagItem, index: number) => {
-                    return (
-                        <Card key={index} id={tag.id} title={tag.title}>
-                            <div
-                                dangerouslySetInnerHTML={{
-                                    __html: makeUrlsClickable(tag.content),
-                                }}
-                            />
-                        </Card>
-                    )
-                })}
+            <Card title="Sheet">
+                {sheetTags &&
+                    sheetTags.map((tag: TagSheet, index: number) => {
+                        return (
+                            <div className="flex mb-2" key={index}>
+                                <span className="w-20">
+                                    <Link to={`/${tag.id}`}>{tag.id}</Link>
+                                </span>
+                                <span>{tag.title}</span>
+                            </div>
+                        )
+                    })}
+            </Card>
         </section>
     )
 }

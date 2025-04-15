@@ -19,8 +19,9 @@ function Instructions() {
                 You can learn this game as you play. Simply start with the first
                 event (<Link to="/E001">E001</Link>) and then read sections as
                 necessary. You may find it convenient to read important rules
-                sections first, including <Link to="/R203">R203</Link>,
-                <Link to="/R212">R212</Link>, <Link to="/R221">R221</Link>,
+                sections first, including <Link to="/R203">R203</Link>,&nbsp;
+                <Link to="/R212">R212</Link>,&nbsp;<Link to="/R221">R221</Link>
+                ,&nbsp;
                 <Link to="/R230">R230</Link> and <Link to="/R232">R232</Link>,
                 or if ambitious, read all the rules sections first (R201–R232).
             </p>

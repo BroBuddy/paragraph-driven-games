@@ -3,10 +3,18 @@
     line-height: 1.5;
 }
 
-ul {
-    list-style-type: square;
+ul,
+ol {
     padding-left: 18px;
     margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
 }
 
 body {

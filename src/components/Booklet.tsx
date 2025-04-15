@@ -62,7 +62,7 @@ const groupedOptions = [
     },
 ]
 
-const Tags = () => {
+const Booklet = () => {
     const { tagId } = useParams()
     const navigate = useNavigate()
     const [_, setActiveTag] = useState<TagItem | null>(null)
@@ -91,11 +91,10 @@ const Tags = () => {
         <section className="flex flex-col py-2 w-full">
             <Card>
                 <Select
-                    value={selectedTag}
+                    defaultValue={selectedTag}
                     styles={customStyles}
                     isSearchable={true}
                     onChange={handleChange}
-                    placeholder="Rules..."
                     options={groupedOptions}
                 />
             </Card>
@@ -105,4 +104,4 @@ const Tags = () => {
     )
 }
 
-export default Tags
+export default Booklet

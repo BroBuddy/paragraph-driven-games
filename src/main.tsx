@@ -5,8 +5,9 @@ import App from './App.tsx'
 import './index.css'
 
 const Tag = React.lazy(() => import('./components/Tag'))
-const Tags = React.lazy(() => import('./components/Tags'))
+const Booklet = React.lazy(() => import('./components/Booklet'))
 const Rules = React.lazy(() => import('./components/Rules'))
+const Sector = React.lazy(() => import('./components/Sector'))
 const Sheet = React.lazy(() => import('./components/Sheet'))
 
 const router = createBrowserRouter([
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
                 path: '/',
                 element: (
                     <React.Suspense fallback={<>...</>}>
-                        <Tags />
+                        <Booklet />
                     </React.Suspense>
                 ),
                 children: [
@@ -31,12 +32,19 @@ const router = createBrowserRouter([
                     },
                 ],
             },
-
             {
                 path: '/rules',
                 element: (
                     <React.Suspense fallback={<>...</>}>
                         <Rules />
+                    </React.Suspense>
+                ),
+            },
+            {
+                path: '/sector',
+                element: (
+                    <React.Suspense fallback={<>...</>}>
+                        <Sector />
                     </React.Suspense>
                 ),
             },
