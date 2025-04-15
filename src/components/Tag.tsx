@@ -1,14 +1,14 @@
 import { Link, useParams } from 'react-router-dom'
 import { Rules as RulesData } from '@/service/rules'
 import { Events as EventsData } from '@/service/events'
-import Card from './Card'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
+import Card from './Card'
 
 const Tag = () => {
     const { tagId } = useParams()
-    const tagsInRow = 8
+    const tagsInRow = 7
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const [linkTags, setLinkTags] = useState<string[]>([])
     const dataSet = RulesData.concat(EventsData)
@@ -17,8 +17,8 @@ const Tag = () => {
     useEffect(() => {
         const rulesRegex = /[ER]\d{3}[A-Z]?/g
         const findTags = activeTag?.content.match(rulesRegex)
-        const uniqTags = [...new Set(findTags)]
-        setLinkTags(uniqTags)
+        const uniqueTags = [...new Set(findTags)]
+        setLinkTags(uniqueTags)
     }, [activeTag?.content])
 
     useEffect(() => {

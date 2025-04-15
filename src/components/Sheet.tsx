@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Card from './Card'
-import { sheetTags, sheetPlanets, sheetAreas } from '@/lib/data'
+import { sheetTags } from '@/lib/data'
 import { TagSheet } from '@/lib/types'
 
 function Sheet() {
@@ -9,34 +9,6 @@ function Sheet() {
             <Card title="Frequently Used">
                 {sheetTags &&
                     sheetTags.map((tag: TagSheet, index: number) => {
-                        return (
-                            <div className="flex mb-2" key={index}>
-                                <span className="w-20">
-                                    <Link to={`/${tag.id}`}>{tag.id}</Link>
-                                </span>
-                                <span>{tag.title}</span>
-                            </div>
-                        )
-                    })}
-            </Card>
-
-            <Card title="Planets">
-                {sheetPlanets &&
-                    sheetPlanets.map((tag: TagSheet, index: number) => {
-                        return (
-                            <div className="flex mb-2" key={index}>
-                                <span className="w-20">
-                                    <Link to={`/${tag.id}`}>{tag.id}</Link>
-                                </span>
-                                <span>{tag.title}</span>
-                            </div>
-                        )
-                    })}
-            </Card>
-
-            <Card title="Area Types">
-                {sheetAreas &&
-                    sheetAreas.map((tag: TagSheet, index: number) => {
                         return (
                             <div className="flex mb-2" key={index}>
                                 <span className="w-20">
