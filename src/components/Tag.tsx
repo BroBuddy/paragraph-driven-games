@@ -14,6 +14,7 @@ type TagItem = {
 
 const Tag = () => {
     const { tagId } = useParams()
+    const tagsInRow = 8
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const [linkTags, setLinkTags] = useState<string[]>([])
     const dataSet = RulesData.concat(EventsData)
@@ -55,7 +56,9 @@ const Tag = () => {
                                 <span key={index}>
                                     <Link to={`/${tag}`}>{tag}</Link>
                                     {index + 1 < linkTags.length ? ', ' : null}
-                                    {(index + 1) % 6 == 0 ? <br /> : null}
+                                    {(index + 1) % tagsInRow == 0 ? (
+                                        <br />
+                                    ) : null}
                                 </span>
                             )
                         })}
