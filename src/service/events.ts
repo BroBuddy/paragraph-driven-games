@@ -40,23 +40,23 @@ export const Events = [
         title: 'Robot Caravan',
         time: 'takes 0 hours',
         content: `<p>You see a caravan of robots, composed of one controller robot and 1d6+1 utility robots (R222B). Roll 1d6 to determine what they are carrying:</p>
-            <ul>
-                <li>1 – nothing</li>
-                <li>2 – 3 FU per U-robot</li>
-                <li>3 – 3 RU per U-robot</li>
-                <li>4 – 3 LSU per U-robot</li>
-                <li>5 – 3 CU of luxury foodstuffs (base value 5 S per CU) per U-robot</li>
-                <li>6 – 3 CU of refined ore (base value 10 S per CU) per U-robot</li>
-            </ul>
+            <ol>
+                <li>nothing</li>
+                <li>3 FU per U-robot</li>
+                <li>3 RU per U-robot</li>
+                <li>3 LSU per U-robot</li>
+                <li>3 CU of luxury foodstuffs (base value 5 S per CU) per U-robot</li>
+                <li>3 CU of refined ore (base value 10 S per CU) per U-robot</li>
+            </ol>
             <p>You can ignore them, or you can disable the controller robot and capture the caravan (disabling is easily done, as the robot can’t fight back!). (See R211 for FU, RU, etc.) If you disable the controller and capture it, the event takes 1 hour and roll 1d6:</p>
-            <ul>
-                <li>1 – E117</li>
-                <li>2 – E017</li>
-                <li>3 – E059</li>
-                <li>4 – E117</li>
-                <li>5 – E017</li>
-                <li>6 – no effect</li>
-            </ul>
+            <ol>
+                <li>E117</li>
+                <li>E017</li>
+                <li>E059</li>
+                <li>E117</li>
+                <li>E017</li>
+                <li>no effect</li>
+            </ol>
             <p>You can repair a disabled controller and reprogram it for your own use by a Starship Engineer using an RU. The controller is tech 5, costs 4 S per day to operate, and guides utility robots along a preplanned route using a radio and automatic alarm signals. You can use it to move goods or food from area to area, but it, and any U-robots with it, will be lost if their entry is detected and they are unaccompanied.</p>
             <p>A functioning controller robot can be sold at any Mining or Industrial area for a base price of 300 S (takes 1 hour to do).</p>`,
     },
@@ -121,14 +121,21 @@ export const Events = [
         title: 'Gamblers',
         time: 'takes rest of day',
         content:
-            '<p>Several <strong>“high roller”</strong> gamblers invite you to join a private game. If you agree, you must go alone and decide how much money you take. Then roll <strong>1d6</strong> to see the results of your activities for the day and evening:</p> <ul><li><strong>1:</strong> You are attacked by three men, each <strong>E5, M4, H4</strong> with sidearms (see R210 for tech level). They demand your money and weapons and will leave with them. If you refuse, see <strong>R327</strong> and add one to your dice roll.</li><li><strong>2:</strong> You have bad luck in the games, lose all the money you brought.</li><li><strong>3:</strong> You have poor luck in the games, lose half the money you brought.</li><li><strong>4:</strong> If you succeed with a <strong>Cunning roll</strong> (R202), you double the money you brought. Otherwise, you break even.</li><li><strong>5:</strong> You have good luck and double the money you brought.</li><li><strong>6:</strong> You have excellent luck. If you succeed with a <strong>Cunning roll</strong> (R202), you get five times the money you brought; if you fail, you get triple the money you brought.</li></ul>',
+            '<p>Several <strong>“high roller”</strong> gamblers invite you to join a private game. If you agree, you must go alone and decide how much money you take. Then roll <strong>1d6</strong> to see the results of your activities for the day and evening:</p>' +
+            '<ol><li>You are attacked by three men, each <strong>E5, M4, H4</strong> with sidearms (see R210 for tech level). They demand your money and weapons and will leave with them. If you refuse, see <strong>R327</strong> and add one to your dice roll.</li>' +
+            '<li>You have bad luck in the games, lose all the money you brought.</li>' +
+            '<li>You have poor luck in the games, lose half the money you brought.</li>' +
+            '<li>If you succeed with a <strong>Cunning roll</strong> (R202), you double the money you brought. Otherwise, you break even.</li>' +
+            '<li>You have good luck and double the money you brought.</li>' +
+            '<li>You have excellent luck. If you succeed with a <strong>Cunning roll</strong> (R202), you get five times the money you brought; if you fail, you get triple the money you brought.</li></uo>',
     },
     {
         id: 'E015',
         title: 'Gunrunner',
         time: 'takes rest of day',
         content:
-            '<p>You meet a gunrunner (<strong>E8, M5, H4</strong>) who has a skimmer and a commercial vehicle. The skimmer has a driver, skimmer guns, and a gunner (<strong>E7, M4, H5</strong>). He also has three bodyguards (each <strong>E6, M5, H4</strong>) armed with heavy hand weapons. The skimmer guns are tech 4, for all other items determine tech level (see <strong>R210</strong>). If you decide to attack them, see <strong>R301</strong>. If you damage or destroy the commercial vehicle, roll 1d6 below and get the indicated items free. If you decide to bargain instead, roll 1d6 and see the list below; you can attack after you start to bargain, but in that case see <strong>R230</strong>.</p><ul><li><strong>1:</strong> They will buy any weapons you have, at base price (R229A) for 5 S per sidearm, 5 S per tech level for a heavy hand weapon, 40 S for skimmer gun, 400 S for a boat gun.</li><li><strong>2:</strong> They will sell weapons at the following base prices (R229A): tech 3 sidearms for 3 S each, heavy hand weapons (roll for tech level, see R210) in 6 CU crates of 5 guns for 40 S per crate.</li><li><strong>3:</strong> Military explosive heavy hand weapons (roll for tech level, see R210) for 20 S base price (R229A) each.</li><li><strong>4:</strong> Artillery beam weapon for 1500 S, it is tech 3, 8 CU in size, and fires like a starship gun (R216A) and thus requires an appropriately skilled starship gunner to operate. To fire it must be emplaced on the ground, which takes three men one round, or two men two rounds. Firing in battle consumes 1 FU (R211).</li><li><strong>5:</strong> If your party is on foot, the gunners automatically attack, see R304, otherwise they simply offer to buy any sidearms you have for 2 S each.</li><li><strong>6:</strong> They offer to sell what they claim is an alien weapon of unknown purpose for a base price (R229A) of 600 S. If you buy it, refer to E083 afterward.</li></ul>',
+            '<p>You meet a gunrunner (<strong>E8, M5, H4</strong>) who has a skimmer and a commercial vehicle. The skimmer has a driver, skimmer guns, and a gunner (<strong>E7, M4, H5</strong>). He also has three bodyguards (each <strong>E6, M5, H4</strong>) armed with heavy hand weapons. The skimmer guns are tech 4, for all other items determine tech level (see <strong>R210</strong>). If you decide to attack them, see <strong>R301</strong>. If you damage or destroy the commercial vehicle, roll 1d6 below and get the indicated items free. If you decide to bargain instead, roll 1d6 and see the list below; you can attack after you start to bargain, but in that case see <strong>R230</strong>.</p>' +
+            '<ol><li>They will buy any weapons you have, at base price (R229A) for 5 S per sidearm, 5 S per tech level for a heavy hand weapon, 40 S for skimmer gun, 400 S for a boat gun.</li><li>They will sell weapons at the following base prices (R229A): tech 3 sidearms for 3 S each, heavy hand weapons (roll for tech level, see R210) in 6 CU crates of 5 guns for 40 S per crate.</li><li>Military explosive heavy hand weapons (roll for tech level, see R210) for 20 S base price (R229A) each.</li><li>Artillery beam weapon for 1500 S, it is tech 3, 8 CU in size, and fires like a starship gun (R216A) and thus requires an appropriately skilled starship gunner to operate. To fire it must be emplaced on the ground, which takes three men one round, or two men two rounds. Firing in battle consumes 1 FU (R211).</li><li>If your party is on foot, the gunners automatically attack, see R304, otherwise they simply offer to buy any sidearms you have for 2 S each.</li><li>They offer to sell what they claim is an alien weapon of unknown purpose for a base price (R229A) of 600 S. If you buy it, refer to E083 afterward.</li></ol>',
     },
     {
         id: 'E016',
@@ -156,7 +163,8 @@ export const Events = [
         title: 'Customs Inspection',
         time: 'takes 1d6 hours',
         content:
-            '<p>As you pass through customs, you are delayed by agents looking for anyone without papers (<strong>R228</strong>), stolen goods, or items illegal in all systems. If you are in a starship, they will search the ship (<strong>R229D</strong>). If you refuse to pay any duties (see below), or have anything improper per above, see <strong>E080</strong>. Roll 1d6 as well, to determine which type of item has duty charges:</p><ul><li><strong>1:</strong> Liquor or any type of alcoholic beverage at 5 S per CU.</li><li><strong>2:</strong> Any vehicles (including your own ship’s boat, if present, or the starship itself!) at 5 S per vehicle.</li><li><strong>3:</strong> Any robots at 10 S per robot.</li><li><strong>4:</strong> Any type of ore, at 2 S per CU.</li><li><strong>5:</strong> Any living animals or plants are contraband and will be automatically confiscated, there is no charge, and they are permanently lost.</li><li><strong>6:</strong> Any radioactives at 10 S per CU.</li></ul>',
+            '<p>As you pass through customs, you are delayed by agents looking for anyone without papers (<strong>R228</strong>), stolen goods, or items illegal in all systems. If you are in a starship, they will search the ship (<strong>R229D</strong>). If you refuse to pay any duties (see below), or have anything improper per above, see <strong>E080</strong>. Roll 1d6 as well, to determine which type of item has duty charges:</p>' +
+            '<ol><li>Liquor or any type of alcoholic beverage at 5 S per CU.</li><li>Any vehicles (including your own ship’s boat, if present, or the starship itself!) at 5 S per vehicle.</li><li>Any robots at 10 S per robot.</li><li>Any type of ore, at 2 S per CU.</li><li>Any living animals or plants are contraband and will be automatically confiscated, there is no charge, and they are permanently lost.</li><li>Any radioactives at 10 S per CU.</li></ol>',
     },
     {
         id: 'E020',
@@ -201,11 +209,69 @@ export const Events = [
             '<p>You can buy hypercharges and install them in your starship. They cannot be stored as cargo or otherwise transported. Each hypercharge has a standard cost of 500 S.</p>',
     },
     {
-        id: 'E026-035',
+        id: 'E026',
         title: 'Buy & Sell Items',
         time: 'if not timed, takes 1 hour',
         content:
-            '<p>Refer to the appropriate paragraph below for the specific item to be bought or sold, and the base prices (R229A). In some cases, you can only buy, or only sell, as indicated. </p><p>E027 Fuel Units: (R211) each unit 2 S to buy, 1 S to sell, base price.<br />E028 Life Support Units: (R211) each unit 1 S to buy base, cannot sell.<br />E029 Life Support Units: (R211) each unit 2 S to buy base, cannot sell.<br />E030 Repair Units: (R211) each unit 1 S to buy, 1 S to sell, base price.<br />E031 Repair Units: (R211) each unit 2 S to buy, 1 S to sell, base price.<br />E032 Skimmer: one skimmer (R215C) can be bought for a base price of 40 S, or sold for a base price of 30 S. A skimmer that won’t work on this planet cannot be sold here.<br />E033 Skimmer: one skimmer (R215C) can be bought for a base price of 60 S or sold for a base price of 30 S. A skimmer that won’t work on this planet cannot be sold here.<br />E034 Ship’s Boat: one Hopper class ship’s boat (R214) can be bought for a base price of 900 S or sold for a base price of 600 S.<br />E035 Ship’s Boat: one Hopper class ship’s boat (R214) can be bought for a base price of 1200 S, or sold for a base price of 500 S.</p>',
+            '<p>Refer to the appropriate paragraph below for the specific item to be bought or sold, and the base prices (R229A). In some cases, you can only buy, or only sell, as indicated.</p>',
+    },
+    {
+        id: 'E027',
+        title: 'Fuel Units',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R211) each unit 2 S to buy, 1 S to sell, base price.</p>',
+    },
+    {
+        id: 'E028',
+        title: 'Life Support Units',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R211) each unit 1 S to buy base, cannot sell.</p>',
+    },
+    {
+        id: 'E029',
+        title: 'Life Support Units',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R211) each unit 2 S to buy base, cannot sell.</p>',
+    },
+    {
+        id: 'E030',
+        title: 'Repair Units',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R211) each unit 1 S to buy, 1 S to sell, base price.</p>',
+    },
+    {
+        id: 'E031',
+        title: 'Repair Units',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R211) each unit 2 S to buy, 1 S to sell, base price.</p>',
+    },
+    {
+        id: 'E032',
+        title: 'Skimmer',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>One skimmer (R215C) can be bought for a base price of 40 S, or sold for a base price of 30 S. A skimmer that won’t work on this planet cannot be sold here.</p>',
+    },
+    {
+        id: 'E033',
+        title: 'Skimmer',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>One skimmer (R215C) can be bought for a base price of 60 S or sold for a base price of 30 S. A skimmer that won’t work on this planet cannot be sold here.</p>',
+    },
+    {
+        id: 'E034',
+        title: 'Ship’s Boat',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>One Hopper class ship’s boat (R214) can be bought for a base price of 900 S or sold for a base price of 600 S.<br />E035 Ship’s Boat: one Hopper class ship’s boat (R214) can be bought for a base price of 1200 S, or sold for a base price of 500 S.</p>',
+    },
+    {
+        id: 'E035',
+        title: 'Ship’s Boat',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>One Hopper class ship’s boat (R214) can be bought for a base price of 1200 S, or sold for a base price of 500 S.</p>',
     },
     {
         id: 'E036',
@@ -213,13 +279,6 @@ export const Events = [
         time: 'takes rest of day',
         content:
             '<p>You can buy an Antelope class starship (R212) for 120,000 S cash. You cannot buy one on credit, since your credit is now bad (start a new game if you want to do that!). The starship comes with no cargo, no crew, no starship guns, and only one Hypercharge, although you are free to buy more at 500 S each. The starship comes with all normal ship’s papers (R228) unless you are “wanted.” If you’re wanted, you can get the ship, but without papers (it is bought illegally). Note that the starship does not come with a ship’s boat. Determine tech level of the starship using R210. It may not be tech 1 (as was your original Antelope class)!</p>',
-    },
-    {
-        id: 'E037-E056',
-        title: 'Buy & Sell Items',
-        time: 'if not timed, takes 1 hour',
-        content:
-            '<p>Refer to the appropriate paragraph below for the specific item to be bought or sold, and its base price (R229A). In some cases you can only buy or only sell, as indicated. Determine tech level for items per rules in R210.<br />E045 Sidearms: (R216D) each 2 S to buy base price, cannot sell.<br />E046 Sidearms: (R216D) each 5 S to buy base price, cannot sell. If in a Rural area, no more than one may be bought.<br />E047 Sidearms: (R216D) each 4 S to buy, 2 S to sell, base price.<br />E048 Heavy Hand Weapons: (R216D) each 10 S to buy base, cannot sell.<br />E049 Heavy Hand Weapons: (R216D) each 15 S to buy, 10 S to sell, base.<br />E050 Heavy Hand Weapons: (R216D) each 30 S to buy base price, may not sell. Weapons here have explosive effects also.<br />E051 Skimmer Guns: (R216C) each 25 S to buy, 10 S to sell, base price.<br />E052 Skimmer Guns: (R216C) each 40 S to buy, 30 S to sell, base price.<br />E053 Boat Guns: (R216B) each 80 S to buy, 30 S to sell, base price.<br />E054 Boat Guns: (R216B) each 150 S to buy base price, cannot sell. Before purchase, roll 1d6, a “6” indicates they are armor-piercing guns that automatically inflict one critical hit with each normal hit (instead of normal critical hit procedure) against all targets except starships.<br />E055 Starship Guns: (R216A) each 200 S per tech level to buy, cannot sell. You may select guns of a lower tech level to get a lower price.<br />E056 Starship Guns: (R216A) each 300 S per tech level to buy, 100 S per tech level to sell, base price. You can only buy starship guns of the listed tech level here, you cannot buy lower level guns.</p>',
     },
     {
         id: 'E037',
@@ -271,6 +330,84 @@ export const Events = [
         time: 'if not timed, takes 1 hour',
         content:
             '<p>(R213) suit 20 S to buy base price, cannot sell. Suits here are heavy-duty, will self-seal a two-hit wound.</p>',
+    },
+    {
+        id: 'E045',
+        title: 'Sidearms',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R216D) each 2 S to buy base price, cannot sell.</p>',
+    },
+    {
+        id: 'E046',
+        title: 'Sidearms',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>(R216D) each 5 S to buy base price, cannot sell. If in a Rural area, no more than one may be bought.<br />E047 Sidearms: (R216D) each 4 S to buy, 2 S to sell, base price.<br />E048 Heavy Hand Weapons: (R216D) each 10 S to buy base, cannot sell.<br />E049 Heavy Hand Weapons: (R216D) each 15 S to buy, 10 S to sell, base.<br />E050 Heavy Hand Weapons: (R216D) each 30 S to buy base price, may not sell. Weapons here have explosive effects also.<br />E051 Skimmer Guns: (R216C) each 25 S to buy, 10 S to sell, base price.<br />E052 Skimmer Guns: (R216C) each 40 S to buy, 30 S to sell, base price.<br />E053 Boat Guns: (R216B) each 80 S to buy, 30 S to sell, base price.<br />E054 Boat Guns: (R216B) each 150 S to buy base price, cannot sell. Before purchase, roll 1d6, a “6” indicates they are armor-piercing guns that automatically inflict one critical hit with each normal hit (instead of normal critical hit procedure) against all targets except starships.<br />E055 Starship Guns: (R216A) each 200 S per tech level to buy, cannot sell. You may select guns of a lower tech level to get a lower price.<br />E056 Starship Guns: (R216A) each 300 S per tech level to buy, 100 S per tech level to sell, base price. You can only buy starship guns of the listed tech level here, you cannot buy lower level guns.</p>',
+    },
+    {
+        id: 'E047',
+        title: 'Sidearms',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>Sidearms: (R216D) each 4 S to buy, 2 S to sell, base price.</p>',
+    },
+    {
+        id: 'E048',
+        title: 'Heavy Hand Weapons',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R216D) each 10 S to buy base, cannot sell.</p>',
+    },
+    {
+        id: 'E049',
+        title: 'Heavy Hand Weapons',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R216D) each 15 S to buy, 10 S to sell, base.</p>',
+    },
+    {
+        id: 'E050',
+        title: 'Heavy Hand Weapons',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>(R216D) each 30 S to buy base price, may not sell. Weapons here have explosive effects also.</p>',
+    },
+    {
+        id: 'E051',
+        title: 'Skimmer Guns',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R216C) each 25 S to buy, 10 S to sell, base price.</p>',
+    },
+    {
+        id: 'E052',
+        title: 'Skimmer Guns',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R216C) each 40 S to buy, 30 S to sell, base price.</p>',
+    },
+    {
+        id: 'E053',
+        title: 'Boat Guns',
+        time: 'if not timed, takes 1 hour',
+        content: '<p>(R216B) each 80 S to buy, 30 S to sell, base price.</p>',
+    },
+    {
+        id: 'E054',
+        title: 'Boat Guns',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>(R216B) each 150 S to buy base price, cannot sell. Before purchase, roll 1d6, a “6” indicates they are armor-piercing guns that automatically inflict one critical hit with each normal hit (instead of normal critical hit procedure) against all targets except starships.</p>',
+    },
+    {
+        id: 'E055',
+        title: 'Starship Guns',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>(R216A) each 200 S per tech level to buy, cannot sell. You may select guns of a lower tech level to get a lower price.</p>',
+    },
+    {
+        id: 'E056',
+        title: 'Starship Guns',
+        time: 'if not timed, takes 1 hour',
+        content:
+            '<p>(R216A) each 300 S per tech level to buy, 100 S per tech level to sell, base price. You can only buy starship guns of the listed tech level here, you cannot buy lower level guns.</p>',
     },
     {
         id: 'E057',
@@ -956,7 +1093,8 @@ export const Events = [
         title: 'High Technology Item',
         time: '1 hour',
         content:
-            '<p>You have the opportunity to buy one high-technology item. Roll 2d6 to determine which item is available. All items are tech 6, with the base price (R229A) given in brackets [ ].</p><ul><li><strong>2</strong> upgraded sublight drive for your starship. Escape is automatic from any ship of tech 5 or less, normal escape ability against tech 6 ships. Upgrading takes a full day of RRR to install at a spaceport or station [10,000 S]</li><li><strong>3</strong> ECCM electronic counter-countermeasures unit of 3 CU size that negates the effect of any ECM unit [800 S]</li><li><strong>4</strong> Regrowth Tank that allows rapid healing for one person (R231), with 1d6 hits healed per day if the person stays in the tank the entire day. The tank requires installation in the starship and takes 4 CU. If it breaks down the day it is in use, the person suffers 1d6 extra hits instead of healing that many [2,000 S]</li><li><strong>5</strong> Shadow Suit that can be worn by anyone not in a utility suit. It will reduce the Detection Factor (R238) by one (-1) of the wearer if entering a land area on foot and alone (or with other shadow suit wearers only). Anyone shooting at a wearer has accuracy (R230D) reduced by two. Wearing a shadow suit costs 1 S per day for consumable items (IR filters, etc.) [200 S]</li><li><strong>6</strong> Portable Life Support Unit that when collapsed is 4 CU in size with a 1 CU power plant. When the 4-CU unit is unfolded (takes 1 hour) it expands to hold 50 CU and provides life support (R213) for a month. The 1 CU power plant only runs for that month, after which a week of recharging at a starship power plant is needed [40 S per collapsible unit, 300 S per plant]</li><li><strong>7</strong> Starship Defensive Screens composed of two separate 2 CU devices, one installed in the engine compartment, and one in some other compartment of the starship, and controlled from the pilot’s compartment. Effects of screens are described in R230L [500 S]</li><li><strong>8</strong> ECM electronic countermeasures unit 1 CU in size. It provides added protection for a starship (see R230L) if installed in the engine compartment [500 S]</li><li><strong>9</strong> Vacuum Skimmer that performs like an ordinary skimmer, but able to function in bad air or no air, as well as good air. However, it does not provide life support unless a special version with this feature is purchased. [100 S for standard version, 200 S for version with integral life support]</li><li><strong>10</strong> High Power Sidearm that is like a normal sidearm in size and use, (R215D) except it fires like a heavy hand weapon with explosive charges (R230E) [50 S]</li><li><strong>11</strong> Power Pack fusion plant that never requires recharging or any additional cost. The fusion power pack replaces a normal fuel unit; a pack for a skimmer is 1 CU in size [80 S], a pack for a ship’s boat is 10 CU in size and provides power equivalent to 10 fuel units per hour [2,000 S]</li><li><strong>12</strong> Personal Force Field that occupies 1 CU turned off, 2 CU activated, and surrounds the wearer when activated. When activated it prevents anyone from getting into contact (R230B) with the wearer, and protects the wearer from explosive weapon effects, but not from normal hit effects. If the personal force field is activated when a hyperjump occurs, or inside a stasis field, it immediately explodes and kills the wearer. The force field when activated can surround a person in a utility suit [800 S]</li></ul>',
+            '<p>You have the opportunity to buy one high-technology item. Roll 2d6 to determine which item is available. All items are tech 6, with the base price (R229A) given in brackets [ ].</p>' +
+            '<ol><li>upgraded sublight drive for your starship. Escape is automatic from any ship of tech 5 or less, normal escape ability against tech 6 ships. Upgrading takes a full day of RRR to install at a spaceport or station [10,000 S]</li><li>ECCM electronic counter-countermeasures unit of 3 CU size that negates the effect of any ECM unit [800 S]</li><li>Regrowth Tank that allows rapid healing for one person (R231), with 1d6 hits healed per day if the person stays in the tank the entire day. The tank requires installation in the starship and takes 4 CU. If it breaks down the day it is in use, the person suffers 1d6 extra hits instead of healing that many [2,000 S]</li><li>Shadow Suit that can be worn by anyone not in a utility suit. It will reduce the Detection Factor (R238) by one (-1) of the wearer if entering a land area on foot and alone (or with other shadow suit wearers only). Anyone shooting at a wearer has accuracy (R230D) reduced by two. Wearing a shadow suit costs 1 S per day for consumable items (IR filters, etc.) [200 S]</li><li>Portable Life Support Unit that when collapsed is 4 CU in size with a 1 CU power plant. When the 4-CU unit is unfolded (takes 1 hour) it expands to hold 50 CU and provides life support (R213) for a month. The 1 CU power plant only runs for that month, after which a week of recharging at a starship power plant is needed [40 S per collapsible unit, 300 S per plant]</li><li>Starship Defensive Screens composed of two separate 2 CU devices, one installed in the engine compartment, and one in some other compartment of the starship, and controlled from the pilot’s compartment. Effects of screens are described in R230L [500 S]</li><li>ECM electronic countermeasures unit 1 CU in size. It provides added protection for a starship (see R230L) if installed in the engine compartment [500 S]</li><li>Vacuum Skimmer that performs like an ordinary skimmer, but able to function in bad air or no air, as well as good air. However, it does not provide life support unless a special version with this feature is purchased. [100 S for standard version, 200 S for version with integral life support]</li><li>High Power Sidearm that is like a normal sidearm in size and use, (R215D) except it fires like a heavy hand weapon with explosive charges (R230E) [50 S]</li><li>Power Pack fusion plant that never requires recharging or any additional cost. The fusion power pack replaces a normal fuel unit; a pack for a skimmer is 1 CU in size [80 S], a pack for a ship’s boat is 10 CU in size and provides power equivalent to 10 fuel units per hour [2,000 S]</li><li>Personal Force Field that occupies 1 CU turned off, 2 CU activated, and surrounds the wearer when activated. When activated it prevents anyone from getting into contact (R230B) with the wearer, and protects the wearer from explosive weapon effects, but not from normal hit effects. If the personal force field is activated when a hyperjump occurs, or inside a stasis field, it immediately explodes and kills the wearer. The force field when activated can surround a person in a utility suit [800 S]</li></ol>',
     },
     {
         id: 'E154',

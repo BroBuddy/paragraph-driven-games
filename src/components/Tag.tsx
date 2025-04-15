@@ -4,13 +4,7 @@ import { Events as EventsData } from '@/service/events'
 import Card from './Card'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable } from '@/lib/helper'
-
-type TagItem = {
-    id: string
-    title: string
-    content: string
-    time?: string
-}
+import { TagItem } from '@/lib/types'
 
 const Tag = () => {
     const { tagId } = useParams()

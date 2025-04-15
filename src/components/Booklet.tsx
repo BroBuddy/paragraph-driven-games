@@ -4,44 +4,8 @@ import { Rules as RulesData } from '@/service/rules'
 import { Events as EventsData } from '@/service/events'
 import Card from './Card'
 import { Outlet, useNavigate, useParams } from 'react-router-dom'
-
-type TagItem = {
-    id: string
-    title: string
-    content: string
-    time?: string
-}
-
-type TagOption = {
-    value: string
-    label: string
-}
-
-const customStyles = {
-    input: (base: any) => ({
-        ...base,
-        color: '#d00',
-    }),
-    control: (base: any) => ({
-        ...base,
-        backgroundColor: '#1e1e1e',
-    }),
-    menu: (base: any) => ({
-        ...base,
-        backgroundColor: '#2a2a2a',
-        color: '#fff',
-    }),
-    option: (base: any, state: any) => ({
-        ...base,
-        backgroundColor: state.isFocused ? '#444' : '#2a2a2a',
-        color: '#fff',
-        cursor: 'pointer',
-    }),
-    singleValue: (base: any) => ({
-        ...base,
-        color: '#fff',
-    }),
-}
+import { TagItem, TagOption } from '@/lib/types'
+import { customStyles } from '@/lib/data'
 
 const groupedOptions = [
     {

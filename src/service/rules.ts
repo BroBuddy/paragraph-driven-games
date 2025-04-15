@@ -161,109 +161,109 @@ export const Rules = [
         title: 'City',
         content:
             '<p>An extensive built-up area with a large population. There are many opportunities to buy and sell items. Banking and medical centers are present. Each roll takes one hour, roll two dice (2d6):</p>' +
-            '<ul><li>2 hire bodyguard (E063)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 sidearms (E045)</li>' +
-            '<li>5 repair units (E031)</li>' +
-            '<li>6 hire repairman (E060)</li>' +
-            '<li>7 fuel units (E026)</li>' +
-            '<li>8 commercial transport (E074)</li>' +
-            '<li>9 life support units (E029)</li>' +
-            '<li>10 skimmer (E032)</li>' +
-            '<li>11 hire driver (E062)</li>' +
-            '<li>12 hire medic (E065)</li></ul>',
+            '<ol start="2"><li>hire bodyguard (E063)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>sidearms (E045)</li>' +
+            '<li>repair units (E031)</li>' +
+            '<li>hire repairman (E060)</li>' +
+            '<li>fuel units (E026)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>life support units (E029)</li>' +
+            '<li>skimmer (E032)</li>' +
+            '<li>hire driver (E062)</li>' +
+            '<li>hire medic (E065)</li></ol>',
     },
     {
         id: 'R205B',
         title: 'Colony',
         content:
             '<p>A residence outpost on a planet, it can supply nearly every need of the colonists that live on planet. It is very difficult for an outsider to pass without notice in a colony. Banks and medical centers are present. Each roll takes one hour, roll two dice (2d6):</p>' +
-            '<ul><li>2 hypercharges (E025)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 sidearms (E045) or heavy hand weapons (E048)</li>' +
-            '<li>5 utility suits (E043)</li>' +
-            '<li>6 hire mobile repairman (E061)</li>' +
-            '<li>7 repair units (E030)</li>' +
-            '<li>8 fuel units (E026)</li>' +
-            '<li>9 life support units (E028)</li>' +
-            '<li>10 GM robot (E038), PS robot (E040), U robot (E042)</li>' +
-            '<li>11 skimmer (E033)</li>' +
-            '<li>12 skimmer guns (E051)</li></ul>',
+            '<ol start="2"><li>hypercharges (E025)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>sidearms (E045) or heavy hand weapons (E048)</li>' +
+            '<li>utility suits (E043)</li>' +
+            '<li>hire mobile repairman (E061)</li>' +
+            '<li>repair units (E030)</li>' +
+            '<li>fuel units (E026)</li>' +
+            '<li>life support units (E028)</li>' +
+            '<li>GM robot (E038), PS robot (E040), U robot (E042)</li>' +
+            '<li>skimmer (E033)</li>' +
+            '<li>skimmer guns (E051)</li></ol>',
     },
     {
         id: 'R205C',
         title: 'Craters',
         content:
             '<p>A cratered region due to natural causes when the planet was formed, or the result of planet-wide wars in the past or present. It is not possible to purchase goods or services here, but items may be found. Anything found is free (there is no charge to you). Each roll takes six hours, roll one die (1d6):</p>' +
-            '<ul><li>1 no more rolls</li>' +
-            '<li>2 special event (E070)</li>' +
-            '<li>3 damaged utility suit (R213), needs one repair unit (R219)</li>' +
-            '<li>4 damaged robot needing repair unit (R219), then roll 1d6: 1-3 PS robot (R222C), 4-6 U robot (R222B)</li>' +
-            '<li>5 undamaged heavy hand weapon (E049)</li>' +
-            '<li>6 special event (E085)</li></ul>',
+            '<ol><li>no more rolls</li>' +
+            '<li>special event (E070)</li>' +
+            '<li>damaged utility suit (R213), needs one repair unit (R219)</li>' +
+            '<li>damaged robot needing repair unit (R219), then roll 1d6: 1-3 PS robot (R222C), 4-6 U robot (R222B)</li>' +
+            '<li>undamaged heavy hand weapon (E049)</li>' +
+            '<li>special event (E085)</li></ol>',
     },
     {
         id: 'R205D',
         title: 'Gambling',
         content:
             '<p>This is an area dedicated to games of chance, sports, and a wide variety of recreational activities. You may win money here (or lose it), make contact with the underworld, or run afoul of the law. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):</p>' +
-            '<ul><li>2 heavy hand weapon (E048)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 sidearms (E047)</li>' +
-            '<li>5 hire driver (E062)</li>' +
-            '<li>6 hire bodyguard (E064)</li>' +
-            '<li>7 gamble (E071)</li>' +
-            '<li>8 commercial transport (E074)</li>' +
-            '<li>9 hire repairman (E060)</li>' +
-            '<li>10 hire medic (E065)</li>' +
-            '<li>11 fuel units (E027)</li>' +
-            '<li>12 hire starship gunner (E069)</li></ul>',
+            '<ol start="2"><li>heavy hand weapon (E048)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>sidearms (E047)</li>' +
+            '<li>hire driver (E062)</li>' +
+            '<li>hire bodyguard (E064)</li>' +
+            '<li>gamble (E071)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>hire repairman (E060)</li>' +
+            '<li>hire medic (E065)</li>' +
+            '<li>fuel units (E027)</li>' +
+            '<li>hire starship gunner (E069)</li></ol>',
     },
     {
         id: 'R205E',
         title: 'Industrial',
         content:
             '<p>An area of industrial research and manufacturing. This is a good area to buy equipment. Banking facilities are present. Each roll takes two hours; roll two dice (2d6):</p>' +
-            '<ul><li>2 hire starship engineer (E067)</li>' +
-            '<li>3 skimmer (E033) and/or skimmer guns (E051)</li>' +
-            '<li>4 PS robot (E060) and/or GM robot (E037)</li>' +
-            '<li>5 U robot (E041)</li>' +
-            '<li>6 hire repairman (E060)</li>' +
-            '<li>7 repair units (E030)</li>' +
-            '<li>8 fuel units (E026)</li>' +
-            '<li>9 commercial transport (E074)</li>' +
-            '<li>10 life support units (E028)</li>' +
-            '<li>11 utility suits (E043) and/or sidearms (E046)</li>' +
-            '<li>12 buy/install stasis units (E057)</li></ul>',
+            '<ol start="2"><li>hire starship engineer (E067)</li>' +
+            '<li>skimmer (E033) and/or skimmer guns (E051)</li>' +
+            '<li>PS robot (E060) and/or GM robot (E037)</li>' +
+            '<li>U robot (E041)</li>' +
+            '<li>hire repairman (E060)</li>' +
+            '<li>repair units (E030)</li>' +
+            '<li>fuel units (E026)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>life support units (E028)</li>' +
+            '<li>utility suits (E043) and/or sidearms (E046)</li>' +
+            '<li>buy/install stasis units (E057)</li></ol>',
     },
     {
         id: 'R205F',
         title: 'Military',
         content:
             '<p>Military bases and installations have tight security and are generally risky to penetrate. If you can make contact, you may be able to buy military weaponry. Banking facilities are available inside the base, but medical are not (the military send all non-military personnel to civilian hospitals!). Each roll takes four hours; roll one die (1d6):</p>' +
-            '<ul><li>1 only buy heavy hand weapons (E050)</li>' +
-            '<li>2 special event (E086)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 only buy boat guns (E054)</li>' +
-            '<li>5 only buy military utility suits (E044)</li>' +
-            '<li>6 hire starship gunner (E069)</li></ul>',
+            '<ol><li>only buy heavy hand weapons (E050)</li>' +
+            '<li>special event (E086)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>only buy boat guns (E054)</li>' +
+            '<li>only buy military utility suits (E044)</li>' +
+            '<li>hire starship gunner (E069)</li></ol>',
     },
     {
         id: 'R205G',
         title: 'Mining',
         content:
             '<p>Mining facilities tend to be far from civilization, and this area type does not have life support automatically (workers have their own life support if on a world with bad or no air). Each roll takes three hours; roll two dice (2d6):</p>' +
-            '<ul><li>2 hire mobile repairman (E061)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 fuel units (E027)</li>' +
-            '<li>5 hire bodyguard (E063)</li>' +
-            '<li>6 special event (E072)</li>' +
-            '<li>7 life support units (E028)</li>' +
-            '<li>8 repair units (E030)</li>' +
-            '<li>9 hire driver (E062)</li>' +
-            '<li>10 utility suits (E044)</li>' +
-            '<li>11 commercial transport (E074)</li>' +
-            '<li>12 U robot (E041)</li></ul>',
+            '<ol start="2"><li>hire mobile repairman (E061)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>fuel units (E027)</li>' +
+            '<li>hire bodyguard (E063)</li>' +
+            '<li>special event (E072)</li>' +
+            '<li>life support units (E028)</li>' +
+            '<li>repair units (E030)</li>' +
+            '<li>hire driver (E062)</li>' +
+            '<li>utility suits (E044)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>U robot (E041)</li></ol>',
     },
     {
         id: 'R205H',
@@ -276,12 +276,12 @@ export const Rules = [
         title: 'Prison',
         content:
             '<p>The area for storage of criminals and other enemies of society. A prison is normally easier to enter than to leave. Prisoners with life sentences are normally packed into 1 CU Stasis Units (R212E), to save on food and guard requirements. As a result, stasis units of 1 and 2 CU are in common use, including some buying and selling. Each roll takes two hours, roll one die (1d6):</p>' +
-            '<ul><li>1 special event (E073)</li>' +
-            '<li>2 no more rolls</li>' +
-            '<li>3 hire bodyguard (E064)</li>' +
-            '<li>4 special event (E087)</li>' +
-            '<li>5 stasis units in 1 CU or 2 CU sizes only (E057)</li>' +
-            '<li>6 no more rolls</li></ul>',
+            '<ol><li>special event (E073)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>hire bodyguard (E064)</li>' +
+            '<li>special event (E087)</li>' +
+            '<li>stasis units in 1 CU or 2 CU sizes only (E057)</li>' +
+            '<li>no more rolls</li></ol>',
     },
     {
         id: 'R205J',
@@ -294,102 +294,102 @@ export const Rules = [
         title: 'Ruins',
         content:
             '<p>The abandoned and decrepit remains of former civilization. Ruins may be searched for usable items, but equipment found here is at technology level 20 points below the normal planetary tech code (with a minimum tech code of 10 or the planetary code, whichever is less); ignore purchase prices, all found equipment is free. Each roll takes five hours; roll two dice (2d6):</p>' +
-            '<ul><li>2 wrecked ship’s boat with 1d6 points of damage</li>' +
-            '<li>3 find one intact robot (1-4: U robot, 5: PS robot, 6: GM robot)</li>' +
-            '<li>4 find intact skimmer with no fuel</li>' +
-            '<li>5 find 1d6 damaged utility suits (repair required)</li>' +
-            '<li>6 special event (E084)</li>' +
-            '<li>7 find damaged skimmer (repair or cannibalize)</li>' +
-            '<li>8 special event (E088)</li>' +
-            '<li>9 find one damaged robot (repair required)</li>' +
-            '<li>10 find one sidearm</li>' +
-            '<li>11 find one repair unit</li>' +
-            '<li>12 find one intact utility suit in destroyed vehicle</li></ul>',
+            '<ol start="2"><li>wrecked ship’s boat with 1d6 points of damage</li>' +
+            '<li>find one intact robot (1-4: U robot, 5: PS robot, 6: GM robot)</li>' +
+            '<li>find intact skimmer with no fuel</li>' +
+            '<li>find 1d6 damaged utility suits (repair required)</li>' +
+            '<li>special event (E084)</li>' +
+            '<li>find damaged skimmer (repair or cannibalize)</li>' +
+            '<li>special event (E088)</li>' +
+            '<li>find one damaged robot (repair required)</li>' +
+            '<li>find one sidearm</li>' +
+            '<li>find one repair unit</li>' +
+            '<li>find one intact utility suit in destroyed vehicle</li></ol>',
     },
     {
         id: 'R205L',
         title: 'Rural',
         content:
             '<p>An area where food is grown in a life-support environment. Banking facilities are present here. Each roll takes three hours; roll two dice (2d6):</p>' +
-            '<ul><li>2 one sidearm (E046)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 hire driver (E062)</li>' +
-            '<li>5 hire mobile repairman (E061)</li>' +
-            '<li>6 fuel units (E027)</li>' +
-            '<li>7 life support units (E028)</li>' +
-            '<li>8 commercial transport (E074)</li>' +
-            '<li>9 repair units (E031)</li>' +
-            '<li>10 one U robot (E041)</li>' +
-            '<li>11 hire medic (E065)</li>' +
-            '<li>12 hire bodyguard (E063)</li></ul>',
+            '<ol start="2"><li>one sidearm (E046)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>hire driver (E062)</li>' +
+            '<li>hire mobile repairman (E061)</li>' +
+            '<li>fuel units (E027)</li>' +
+            '<li>life support units (E028)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>repair units (E031)</li>' +
+            '<li>one U robot (E041)</li>' +
+            '<li>hire medic (E065)</li>' +
+            '<li>hire bodyguard (E063)</li></ol>',
     },
     {
         id: 'R205M',
         title: 'Scientific',
         content:
             '<p>An area where scientific research and development is performed. Items purchased here are considered one tech level higher than normal. If an item from here breaks down, it must be returned here or repaired by a qualified engineer. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):</p>' +
-            '<ul><li>2 stasis units of any size (E057)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 special event (E075)</li>' +
-            '<li>5 hire starship engineer (E067)</li>' +
-            '<li>6 hire repairman (E060)</li>' +
-            '<li>7 commercial transport (E074)</li>' +
-            '<li>8 PS robot (E039) or GM robot (E037)</li>' +
-            '<li>9 U robot (E041) or utility suits (E043)</li>' +
-            '<li>10 sidearms (E045) or heavy hand weapons (E048)</li>' +
-            '<li>11 skimmer gun (E051) or boat gun (E053)</li>' +
-            '<li>12 starship guns (E055)</li></ul>',
+            '<ol start="2"><li>stasis units of any size (E057)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>special event (E075)</li>' +
+            '<li>hire starship engineer (E067)</li>' +
+            '<li>hire repairman (E060)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>PS robot (E039) or GM robot (E037)</li>' +
+            '<li>U robot (E041) or utility suits (E043)</li>' +
+            '<li>sidearms (E045) or heavy hand weapons (E048)</li>' +
+            '<li>skimmer gun (E051) or boat gun (E053)</li>' +
+            '<li>starship guns (E055)</li></ol>',
     },
     {
         id: 'R205N',
         title: 'Slum Area',
         content:
             '<p>A region of poverty and high crime. Slums are dangerous for outsiders but have a wide variety of items, often at inflated prices. Banking facilities are present. Each roll takes two hours; roll two dice (2d6):</p>' +
-            '<ul><li>2 hire starship pilot/navigator (E066) or engineer (E067) (no papers)</li>' +
-            '<li>3 buy U robot (E042), PS robot (E040), GM robot (E038) (no serials)</li>' +
-            '<li>4 no more rolls</li>' +
-            '<li>5 fuel, life support, and/or repair units (E027/E029/E031)</li>' +
-            '<li>6 hire driver (E062) or skimmer trade (E033)</li>' +
-            '<li>7 special event (E076)</li>' +
-            '<li>8 hire bodyguard (E064)</li>' +
-            '<li>9 sidearms (E047) or heavy hand weapons (E049)</li>' +
-            '<li>10 commercial transport (E074)</li>' +
-            '<li>11 skimmer gun (E052) or boat gun (E054)</li>' +
-            '<li>12 hire medic (E065) (no papers)</li></ul>',
+            '<ol start="2"><li>hire starship pilot/navigator (E066) or engineer (E067) (no papers)</li>' +
+            '<li>buy U robot (E042), PS robot (E040), GM robot (E038) (no serials)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>fuel, life support, and/or repair units (E027/E029/E031)</li>' +
+            '<li>hire driver (E062) or skimmer trade (E033)</li>' +
+            '<li>special event (E076)</li>' +
+            '<li>hire bodyguard (E064)</li>' +
+            '<li>sidearms (E047) or heavy hand weapons (E049)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>skimmer gun (E052) or boat gun (E054)</li>' +
+            '<li>hire medic (E065) (no papers)</li></ol>',
     },
     {
         id: 'R205O',
         title: 'Spaceport',
         content:
             '<p>A major planetary terminal for interplanetary and star system transport. All ships must use the spaceport for customs, trade, and repair. Banking and medical facilities are available. Each roll takes one hour; roll two dice (2d6):</p>' +
-            '<ul><li>2 stasis units of any size (E057)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 starship (E036) or starship guns (E055)</li>' +
-            '<li>5 ship’s boat (E034) or boat guns (E053)</li>' +
-            '<li>6 commercial transport (E074)</li>' +
-            '<li>7 hypercharges, fuel, and/or life support (E025/E026/E028)</li>' +
-            '<li>8 utility suits and/or repair units (E043/E030)</li>' +
-            '<li>9 GM, PS, and/or U robots (E037/E039/E041)</li>' +
-            '<li>10 starship engineer and/or gunner (E067/E068)</li>' +
-            '<li>11 starship pilot/navigator (E066)</li>' +
-            '<li>12 medic (E065)</li></ul>',
+            '<ol start="2"><li>stasis units of any size (E057)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>starship (E036) or starship guns (E055)</li>' +
+            '<li>ship’s boat (E034) or boat guns (E053)</li>' +
+            '<li>commercial transport (E074)</li>' +
+            '<li>hypercharges, fuel, and/or life support (E025/E026/E028)</li>' +
+            '<li>utility suits and/or repair units (E043/E030)</li>' +
+            '<li>GM, PS, and/or U robots (E037/E039/E041)</li>' +
+            '<li>starship engineer and/or gunner (E067/E068)</li>' +
+            '<li>starship pilot/navigator (E066)</li>' +
+            '<li>medic (E065)</li></ol>',
     },
     {
         id: 'R205P',
         title: 'Space Station',
         content:
             '<p>Smaller version of a spaceport, usually in orbit. Conditions are cramped, prices higher, but services are available. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):</p>' +
-            '<ul><li>2 hire repairman (E060)</li>' +
-            '<li>3 no more rolls</li>' +
-            '<li>4 ship’s boat (E035) or boat guns (E056)</li>' +
-            '<li>5 utility suits (E044)</li>' +
-            '<li>6 fuel, life support, and/or repair units (E027/E029/E031)</li>' +
-            '<li>7 hypercharges (E025)</li>' +
-            '<li>8 orbital shuttle (E074)</li>' +
-            '<li>9 install stasis units (E057)</li>' +
-            '<li>10 hire starship engineer (E067)</li>' +
-            '<li>11 hire starship pilot/navigator (E066)</li>' +
-            '<li>12 hire starship gunner (E068)</li></ul>',
+            '<ol start="2"><li>hire repairman (E060)</li>' +
+            '<li>no more rolls</li>' +
+            '<li>ship’s boat (E035) or boat guns (E056)</li>' +
+            '<li>utility suits (E044)</li>' +
+            '<li>fuel, life support, and/or repair units (E027/E029/E031)</li>' +
+            '<li>hypercharges (E025)</li>' +
+            '<li>orbital shuttle (E074)</li>' +
+            '<li>install stasis units (E057)</li>' +
+            '<li>hire starship engineer (E067)</li>' +
+            '<li>hire starship pilot/navigator (E066)</li>' +
+            '<li>hire starship gunner (E068)</li></ol>',
     },
     {
         id: 'R206',
@@ -419,7 +419,7 @@ export const Rules = [
         title: 'Palatek',
         content:
             '<p>Palatek attempted to replace the technological preeminence of Regari, but went to such extremes that toxic effluents poisoned the atmosphere. Despite scientific efforts, respiratory diseases remain a common cause of death. System defense is largely under corporate control, and emphasizes protection against industrial espionage.</p>' +
-            '<p>System Entry 1d6 roll: 1- E092, 2- E120, 3- E105, 4- E108, 5- E097, 6- E103<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E092</li><li>E120</li><li>E105</li><li>E108</li><li>E097</li><li>E103</li></ol>' +
             'System Codes: wealth 30, tech 50.<br />' +
             'Planet I: layout A-C, gravity 7, bad air.</p>',
     },
@@ -428,7 +428,7 @@ export const Rules = [
         title: 'Byzantium',
         content:
             '<p>A very old society exists here, noted for its political intrigue and complexity, its vigilant secret police, and underground dungeons that none are said to leave. It is known as a dangerous system to enter, unless one has the right connections.</p>' +
-            '<p>System Entry 1d6 roll: 1- E106, 2- E102, 3- E093, 4- E117, 5- E120, 6- E104<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E106</li><li>E102</li><li>E093</li><li>E117</li><li>E120</li><li>E104</li></ol>' +
             'System Codes: wealth 50, tech 15.<br />' +
             'Planet I: layout F-C, gravity 10, good air.<br />' +
             'Planet II: layout E-B, gravity 8, good air.</p>',
@@ -438,7 +438,7 @@ export const Rules = [
         title: 'Imperia',
         content:
             '<p>The self-declared capital of a modest empire that includes Palatek, Byzantium, and Talitar. This system assumes the trappings of an imperial capital, but without the actual power. Showy buildings and ornate artwork everywhere conceal dire poverty and a mean existence. Imperia tends to waste its wealth on efforts of size and spectacle rather than quality, although some families possess valuable treasures.</p>' +
-            '<p>System Entry 1d6 roll: 1- E092, 2- E100, 3- E093, 4- E114, 5- E113, 6- E105<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E092</li><li>E100</li><li>E093</li><li>E114</li><li>E113</li><li>E105</li></ol>' +
             'System Codes: wealth 100, tech 25.<br />' +
             'Planet I: layout C-G, gravity 11, good air.<br />' +
             'System includes asteroids.</p>',
@@ -448,7 +448,7 @@ export const Rules = [
         title: 'Talitar',
         content:
             '<p>Noted for its vicious and repressive government. Talitarians have few freedoms; the army is in firm control, and troopers vigorously patrol both the planets and the space lanes of the system. Careful bribery can be useful here, but it is exceedingly risky.</p>' +
-            '<p>System Entry 1d6 roll: 1- E120, 2- E118, 3- E096, 4- E106, 5- E093, 6- E118<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E120</li><li>E118</li><li>E096</li><li>E106</li><li>E093</li><li>E118</li></ol>' +
             'System Codes: wealth 25, tech 30.<br />' +
             'Planet I: layout F-I, gravity 13, good air.<br />' +
             'Planet II: layout E-H, gravity 4, good air.</p>',
@@ -458,7 +458,7 @@ export const Rules = [
         title: 'Cubro',
         content:
             '<p>This system has been a rich source of metals, semiconductors, and crystals for centuries. Much of the planetary surface is now mined out, with extensive wastelands, acid drainage, and mine tailings. There are still valuable mineral finds, but they are relatively small, and depend more on luck than prospecting skill. Cubro now has become a center of industrial development using non-metallic materials, especially the still experimental “bio-plastic” alloys.</p>' +
-            '<p>System Entry 1d6 roll: 1- E121, 2- E104, 3- E117, 4- E103, 5- E105, 6- E092<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E121</li><li>E104</li><li>E117</li><li>E103</li><li>E105</li><li>E092</li></ol>' +
             'System Codes: wealth 15, tech 70.<br />' +
             'Planet I: layout K-A, gravity 7, good air.</p>',
     },
@@ -467,7 +467,7 @@ export const Rules = [
         title: 'Uruskop',
         content:
             '<p>Throughout its long history, Uruskop has been very isolationist, having little trade with other systems and developing in its own unique way. It now has a moderately advanced technology, but its machines and devices tend to confuse outsiders. Foreigners also tend to make social errors, which offend or anger the residents. For these reasons, this system is avoided by wise travelers.</p>' +
-            '<p>System Entry 1d6 roll: 1- E119, 2- E093, 3- E119, 4- E109, 5- E119, 6- E119<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E119</li><li>E093</li><li>E119</li><li>E109</li><li>E119</li><li>E119</li></ol>' +
             'System Codes: wealth 40, tech 40.<br />' +
             'Planet I: layout G-B, gravity 6, bad air.<br />' +
             'System includes asteroids.</p>',
@@ -477,7 +477,7 @@ export const Rules = [
         title: 'Nipna',
         content:
             '<p>This system seems to have a perpetual war with Mynkuria, with a history of battles for at least a thousand years. The system is preoccupied with developing its war machine, and attempts to annihilate life at Mynkuria. Nipna uses the long-range strategy of high-technology weapons, especially due to its population losses, and all industrial and scientific efforts are devoted to armaments.</p>' +
-            '<p>System Entry 1d6 roll: 1- E098, 2- E110, 3- E094, 4- E098, 5- E120, 6- E112<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E098</li><li>E110</li><li>E094</li><li>E098</li><li>E120</li><li>E112</li></ol>' +
             'System Codes: wealth 60, tech 100.<br />' +
             'Planet I: layout J-D, gravity 12, good air.<br />' +
             'Planet II: layout A-I, gravity 9, no air.</p>',
@@ -487,7 +487,7 @@ export const Rules = [
         title: 'Mynkuria',
         content:
             '<p>This system seems to have a perpetual war with Nipna, with a history of battles for at least one thousand years. The system is preoccupied with destroying Nipna, with a long-range strategy centered on the fanatical dedication of its warriors. It tends to base weapons and armament designs on captured Nipnan equipment. Mynkurian troopers readily ignore wounds and pain, and are prepared to spend their lives willingly to damage Nipna. Mynkuria also trains highly efficient spies and saboteurs, notorious for their resistance to torture (despite the advanced techniques used by both sides).</p>' +
-            '<p>System Entry 1d6 roll: 1- E095, 2- E119, 3- E113, 4- E093, 5- E107, 6- E110<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E095</li><li>E119</li><li>E113</li><li>E093</li><li>E107</li><li>E110</li></ol>' +
             'System Codes: wealth 30, tech 60.<br />' +
             'Planet I: layout H-A, gravity 5, no air.<br />' +
             'Planet II: layout C-K, gravity 9, good air.<br />' +
@@ -498,7 +498,7 @@ export const Rules = [
         title: 'New Karma',
         content:
             '<p>This system emphasizes personal spiritual development over technology. There has been an increase in mental powers, including psionic abilities. Many unusual religious cults are centered here, as well as various arts and other creative activities. Individuality is encouraged, so often what other systems consider “insane” is tolerated as normal. Unfortunately, the wars between Nipna and Mynkuria have affected this system at times, so New Karma maintains a military force with simple equipment, but a combat record of high effectiveness. This is probably because talented psionicists are provided complete freedom and great luxury while in military service.</p>' +
-            '<p>System Entry 1d6 roll: 1- E115, 2- E101, 3- E096, 4- E099, 5- E104, 6- E111<br />' +
+            '<p>System Entry 1d6 roll: <ol><li>E115</li><li>E101</li><li>E096</li><li>E099</li><li>E104</li><li>E111</li></ol>' +
             'System Codes: wealth 70, tech 10.<br />' +
             'Planet I: layout K-D, gravity 9, good air.<br />' +
             'Planet II: layout B-J, gravity 14, good air.</p>',
